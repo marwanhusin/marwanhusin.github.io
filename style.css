@@ -96,4 +96,16 @@ section {
 }
 
 #contact input[type="submit"] {
-  background-color:
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+``
