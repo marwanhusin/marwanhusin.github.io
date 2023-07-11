@@ -1,22 +1,24 @@
 .navbar-item {
   font-weight: bold;
+  color: #333; /* Warna teks navbar */
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
+  color: #333; /* Warna teks logo */
 }
 
 .navbar-burger {
-  color: #333;
+  color: #333; /* Warna ikon burger */
 }
 
 .navbar-burger span {
-  background-color: #333;
+  background-color: #333; /* Warna garis ikon burger */
 }
 
 .navbar-menu {
-  background-color: #f8f8f8;
+  background-color: #f8f8f8; /* Warna latar belakang navbar */
 }
 
 .navbar-item,
@@ -26,7 +28,7 @@
 
 @media screen and (max-width: 1023px) {
   .navbar-menu {
-    background-color: #fff;
+    background-color: #fff; /* Warna latar belakang navbar di tampilan seluler */
     border: none;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
   }
@@ -36,6 +38,6 @@
   }
 
   .navbar-burger span {
-    background-color: #333;
+    background-color: #333; /* Warna garis ikon burger di tampilan seluler */
   }
 }
