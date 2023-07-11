@@ -1,43 +1,120 @@
-.navbar-item {
-  font-weight: bold;
-  color: #333; /* Warna teks navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar-brand {
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+nav {
   display: flex;
   align-items: center;
-  color: #333; /* Warna teks logo */
+  justify-content: space-between;
 }
 
-.navbar-burger {
-  color: #333; /* Warna ikon burger */
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
 }
 
-.navbar-burger span {
-  background-color: #333; /* Warna garis ikon burger */
+nav ul {
+  list-style: none;
+  display: flex;
 }
 
-.navbar-menu {
-  background-color: #f8f8f8; /* Warna latar belakang navbar */
+nav ul li {
+  margin-left: 20px;
 }
 
-.navbar-item,
-.navbar-burger {
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+#hero {
+  background-color: #f1f1f1;
+}
+
+#hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#about {
+  background-color: #eaeaea;
+}
+
+#about h2 {
+  margin-bottom: 20px;
+}
+
+#portfolio {
+  background-color: #f1f1f1;
+}
+
+.portfolio-item {
+  margin-bottom: 40px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#contact {
+  background-color: #eaeaea;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#contact input[type="submit"] {
+  background-color: #333;
+  color: #fff;
   cursor: pointer;
+  border: none;
 }
 
-@media screen and (max-width: 1023px) {
-  .navbar-menu {
-    background-color: #fff; /* Warna latar belakang navbar di tampilan seluler */
-    border: none;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-  }
-
-  .navbar-end {
-    margin-top: 10px;
-  }
-
-  .navbar-burger span {
-    background-color: #333; /* Warna garis ikon burger di tampilan seluler */
-  }
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
 }
