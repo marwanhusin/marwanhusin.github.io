@@ -2,41 +2,58 @@
 <html>
 <head>
   <title>Portofolio Saya</title>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          Nama Anda
-        </a>
-  
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-  
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item" href="#">
-            Beranda
-          </a>
-          <a class="navbar-item" href="#">
-            Portofolio
-          </a>
-          <a class="navbar-item" href="#">
-            Kontak
-          </a>
-        </div>
-      </div>
+    <nav>
+      <a href="#" class="logo">Portofolio Saya</a>
+      <ul>
+        <li><a href="#about">Tentang Saya</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
     </nav>
   </header>
-  
-  <!-- Konten lainnya -->
-  
-  <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+
+  <section id="hero">
+    <h1>Selamat Datang di Portofolio Saya</h1>
+    <p>Ini adalah deskripsi singkat tentang diri saya</p>
+    <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+  </section>
+
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae sapien ipsum. Vestibulum eu ligula urna. Etiam vitae sem nec tellus hendrerit finibus.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portofolio</h2>
+    <div class="portfolio-item">
+      <img src="project1.jpg" alt="Proyek 1">
+      <h3>Judul Proyek 1</h3>
+      <p>Deskripsi singkat tentang proyek 1</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="project2.jpg" alt="Proyek 2">
+      <h3>Judul Proyek 2</h3>
+      <p>Deskripsi singkat tentang proyek 2</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontak</h2>
+    <p>Hubungi saya melalui formulir di bawah ini:</p>
+    <form>
+      <input type="text" placeholder="Nama">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Pesan"></textarea>
+      <input type="submit" value="Kirim">
+    </form>
+  </section>
+
+  <footer>
+    <p>Hak Cipta &copy; 2023 Portofolio Saya. Dibuat dengan Cinta.</p>
+  </footer>
 </body>
 </html>
