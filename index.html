@@ -17,6 +17,25 @@
     .fade-in {
       animation: fadeIn 1.5s ease-out;
     }
+
+    /* Style for the back-to-top button */
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+    }
+
+    #backToTop:hover {
+      background-color: #555;
+    }
   </style>
 </head>
 
@@ -113,4 +132,8 @@
 
     // Fungsi untuk scroll kembali ke atas halaman
     function scrollToTop() {
-      window.scrollTo
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
