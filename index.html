@@ -1,121 +1,107 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Saya</title>
-  <link rel="icon" href="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1711863026764?e=1731859200&v=beta&t=SrFZBURxCnDraoEDawyMzflDF4nymFhqxBibQT2QZTQ" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Portofolio Marwan Putra Haji Husin</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
   <style>
-    /* Custom animations */
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    .fade-in {
-      animation: fadeIn 1.5s ease-out;
+    body {
+      font-family: 'Arial', sans-serif;
     }
   </style>
 </head>
-
-<body class="font-sans bg-black text-white">
-
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white shadow-lg">
-    <nav class="container mx-auto py-6 flex items-center justify-between">
-      <a href="#" class="text-3xl font-bold tracking-wide text-white">Marwan Husin</a>
-      <ul class="flex space-x-6">
-        <li><a href="#about" class="text-white hover:text-blue-300 transition">Tentang Saya</a></li>
-        <li><a href="#portfolio" class="text-white hover:text-blue-300 transition">Portofolio</a></li>
-        <li><a href="#contact" class="text-white hover:text-blue-300 transition">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-gray-900 text-white">
 
   <!-- Hero Section -->
-  <section id="hero" class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-40 text-center relative">
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="relative z-10 fade-in">
-      <h1 class="text-5xl font-extrabold leading-tight mb-6">Selamat Datang di Portofolio Saya</h1>
-      <p class="text-xl mb-6 max-w-xl mx-auto">Saya seorang engineer instrumentasi dengan pengalaman di bidang kelistrikan dan pemeliharaan industri, fokus pada otomatisasi dan sistem kontrol modern.</p>
+  <section id="hero" class="h-screen bg-gradient-to-r from-blue-900 to-blue-600 flex items-center justify-center text-center">
+    <div>
+      <h1 class="text-5xl font-extrabold text-white mb-4">Marwan Putra Haji Husin</h1>
+      <p class="text-xl mb-8">Electrical Engineer | Instrumentation | Technology Enthusiast</p>
+      <a href="#about" class="text-xl text-blue-300 hover:text-blue-400">Scroll Down</a>
+    </div>
+  </section>
 
-      <!-- Foto Profil -->
-      <div class="flex justify-center mb-6">
-        <img src="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1711863026764?e=1731859200&v=beta&t=SrFZBURxCnDraoEDawyMzflDF4nymFhqxBibQT2QZTQ" alt="Foto Profil Marwan Husin" class="rounded-full w-40 h-40 object-cover border-4 border-white shadow-xl transform transition-transform duration-500 hover:scale-110">
-      </div>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-black text-center">
+    <h2 class="text-4xl font-extrabold text-blue-300 mb-8">Tentang Saya</h2>
+    <p class="text-lg text-gray-200 max-w-2xl mx-auto">
+      Saya seorang profesional dengan pengalaman lebih dari 3 tahun di bidang kelistrikan dan instrumentasi, terlibat dalam berbagai proyek terkait smelting, otomasi, dan pemeliharaan sistem kelistrikan.
+    </p>
+  </section>
 
-      <!-- Tombol Lihat Profil LinkedIn -->
-      <a href="https://www.linkedin.com/in/marwanhusin/" target="_blank" class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-700 transition transform duration-300 hover:scale-105">
-        Lihat Profil LinkedIn Saya
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-black text-center">
+    <h2 class="text-4xl font-extrabold text-blue-300 mb-8">Apa Kata Mereka</h2>
+    <div class="max-w-2xl mx-auto">
+      <blockquote class="text-lg text-gray-200 italic">"Marwan adalah profesional yang sangat terampil dalam sistem kelistrikan dan otomatisasi. Kontribusinya sangat membantu proyek kami berjalan dengan lancar dan efisien." - Nama Atasan</blockquote>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-20 bg-blue-800 text-center">
+    <h2 class="text-4xl font-extrabold text-blue-300 mb-8">Artikel Terbaru</h2>
+    <div class="max-w-2xl mx-auto">
+      <h3 class="text-xl text-white mb-4">Mengoptimalkan Sistem Otomatisasi dalam Industri Smelter</h3>
+      <p class="text-gray-200 mb-4">Dalam artikel ini, saya membahas berbagai teknik dan strategi untuk mengoptimalkan sistem otomatisasi di industri smelter, serta tantangan yang dihadapi dalam implementasinya.</p>
+      <a href="#" class="text-blue-500 hover:text-blue-400 transition">Baca Selengkapnya</a>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-20 bg-blue-800 text-center">
+    <h2 class="text-4xl font-extrabold text-blue-300 mb-8">Prestasi & Sertifikasi</h2>
+    <ul class="list-disc text-lg text-gray-200">
+      <li>Sertifikat K3 dari Kementerian Ketenagakerjaan (2024-2027)</li>
+      <li>Medali Perak dalam Kompetisi Bola Basket TPB Cup 2018</li>
+      <li>Sertifikat Teknisi Otomasi BNSP (2023-2026)</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-form" class="py-20 bg-black text-center">
+    <h2 class="text-4xl font-extrabold text-blue-300 mb-8">Hubungi Saya</h2>
+    <form action="mailto:marwan@domain.com" method="POST" enctype="multipart/form-data" class="max-w-2xl mx-auto">
+      <input type="text" name="name" placeholder="Nama Anda" class="mb-4 p-3 w-full rounded-md text-black">
+      <input type="email" name="email" placeholder="Email Anda" class="mb-4 p-3 w-full rounded-md text-black">
+      <textarea name="message" placeholder="Pesan Anda" class="mb-4 p-3 w-full rounded-md text-black"></textarea>
+      <button type="submit" class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-700 transition">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <!-- Social Media Section -->
+  <section id="social-media" class="py-20 text-center">
+    <h2 class="text-4xl font-extrabold text-blue-300 mb-8">Temukan Saya di Media Sosial</h2>
+    <div class="flex justify-center space-x-8">
+      <a href="https://github.com/username" target="_blank" class="text-white hover:text-blue-300 transition">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      <a href="https://twitter.com/username" target="_blank" class="text-white hover:text-blue-300 transition">
+        <i class="fab fa-twitter fa-2x"></i>
       </a>
     </div>
   </section>
 
-  <main>
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-blue-800 text-center">
-      <h2 class="text-4xl font-extrabold text-blue-300 mb-8 fade-in">Tentang Saya</h2>
-      <p class="text-lg text-gray-200 mb-4 max-w-4xl mx-auto fade-in">
-        Sebagai Engineer Instrumentasi di PT DEXIN STEEL INDONESIA, saya fokus dalam pemeliharaan dan optimasi sistem kelistrikan serta pengendalian otomatis di industri smelter. Dengan pengalaman dalam troubleshooting dan pemeliharaan sistem instrumentasi, saya berkomitmen untuk meningkatkan efisiensi dan keandalan operasional. Selain itu, dengan latar belakang pendidikan di bidang Teknik Listrik dan Ilmu Komputer, saya menggabungkan keterampilan teknis dan inovasi teknologi terbaru dalam solusi industri.
-      </p>
-      <p class="text-lg text-gray-200 mb-4 max-w-4xl mx-auto fade-in">
-        Jika Anda tertarik untuk berkolaborasi atau mendiskusikan peluang, saya terbuka untuk berdiskusi lebih lanjut.
-      </p>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 bg-black">
-      <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-extrabold text-blue-300 mb-12 fade-in">Portofolio</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-          <!-- Portfolio Item -->
-          <div class="bg-blue-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <img src="https://media.licdn.com/dms/image/v2/D5622AQE7YY_SeS64cA/feedshare-shrink_800/feedshare-shrink_800/0/1694142666046?e=1733961600&amp;v=beta&amp;t=eTLnEDfUGK8PQUhbzG5SkdV2zkwfutrZc7hg4DOpK_g" alt="LinkedIn Project Image" class="w-full h-48 object-cover rounded-md mb-4">
-            <h3 class="text-xl font-semibold mb-2 text-white">Pengalaman Proyek Sistem Otomatisasi di Industri</h3>
-            <p class="text-gray-400">Proyek ini menunjukkan penerapan sistem otomatisasi untuk meningkatkan efisiensi produksi dan meminimalisir kesalahan operasional di lingkungan industri. Pengalaman ini melibatkan pengembangan dan implementasi solusi teknologi yang meningkatkan proses produksi.</p>
-            <a href="https://www.linkedin.com/posts/marwanhusin_hello-everyone-im-thrilled-to-share-a-glimpse-activity-7105749404036337664--yFn?utm_source=share&amp;utm_medium=member_desktop" target="_blank" class="text-blue-500 hover:text-blue-400 transition">Lihat Detail Proyek</a>
-          </div>
-
-          <!-- More Portfolio Items... -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-blue-800 text-center">
-      <h2 class="text-4xl font-extrabold text-blue-300 mb-8 fade-in">Kontak</h2>
-      <p class="text-lg text-gray-200 mb-8 fade-in">Saya terbuka untuk kesempatan baru atau diskusi lebih lanjut. Jangan ragu untuk menghubungi saya jika Anda ingin berbicara lebih lanjut!</p>
-      <a href="mailto:marwanhusin338@gmail.com" class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-700 transition">Hubungi Saya</a>
-    </section>
-  </main>
+  <!-- Location Section -->
+  <section id="location" class="py-20 text-center">
+    <h2 class="text-4xl font-extrabold text-blue-300 mb-8">Lokasi Proyek Saya</h2>
+    <div class="mx-auto w-full h-64">
+      <iframe src="https://www.google.com/maps/embed?pb=..." class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-blue-900 text-center py-8 text-gray-400">
-    <p>&copy; 2024 Marwan Husin | Portofolio Saya</p>
+  <footer class="bg-gray-800 text-center py-8">
+    <p>&copy; 2024 Marwan Putra Haji Husin. All rights reserved.</p>
   </footer>
 
-  <!-- Back to Top Button -->
-  <button id="backToTop" onclick="scrollToTop()" class="bg-blue-700 text-white p-3 rounded-full fixed bottom-5 right-5 transition transform duration-300 hover:scale-110">↑</button>
-
-  <!-- JavaScript -->
   <script>
-    // Menampilkan tombol 'back-to-top' saat scroll
-    window.onscroll = function() {
-      var button = document.getElementById('backToTop');
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        button.style.display = "block";
-      } else {
-        button.style.display = "none";
-      }
-    };
-
-    // Fungsi untuk scroll kembali ke atas halaman
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    function searchFunction() {
+      const query = document.getElementById('searchBox').value.toLowerCase();
+      alert('Mencari: ' + query);
     }
   </script>
-
 </body>
 </html>
