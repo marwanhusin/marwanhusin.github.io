@@ -3,102 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Saya</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Portofolio Web - Marwan Putra Haji Husin</title>
+  
+  <!-- Menambahkan favicon -->
+  <link rel="icon" href="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1711863026764?e=1731859200&v=beta&t=SrFZBURxCnDraoEDawyMzflDF4nymFhqxBibQT2QZTQ" type="image/png">
+  
+  <!-- Menggunakan TailwindCSS untuk desain responsif dan modern -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    /* Custom animations */
-    @keyframes fadeIn {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
+    /* Custom Styles for Animations and Aesthetics */
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .fade-in {
-      animation: fadeIn 1.5s ease-out;
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      background-color: #3b82f6;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #2563eb;
+    }
+
+    /* Styling for Section Cards */
+    .section-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .section-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-card img {
+      object-fit: cover;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    .section-card h3 {
+      font-size: 1.25rem;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .section-card p {
+      color: #666;
+      font-size: 1rem;
+    }
+
+    .section-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #3b82f6;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .section-card a:hover {
+      color: #2563eb;
     }
   </style>
 </head>
-<body class="font-sans bg-black text-white">
-
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-gray-900 to-black text-white shadow-lg">
-    <nav class="container mx-auto py-6 flex items-center justify-between">
-      <a href="#" class="text-3xl font-bold tracking-wide text-white">Marwan Husin</a>
-      <ul class="flex space-x-6">
-        <li><a href="#about" class="text-white hover:text-gray-300 transition">Tentang Saya</a></li>
-        <li><a href="#portfolio" class="text-white hover:text-gray-300 transition">Portofolio</a></li>
-        <li><a href="#contact" class="text-white hover:text-gray-300 transition">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-gray-100 text-gray-900">
 
   <!-- Hero Section -->
-  <section id="hero" class="bg-gradient-to-r from-black to-gray-900 text-white py-40 text-center relative">
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="relative z-10 fade-in">
-      <h1 class="text-5xl font-extrabold leading-tight mb-6">Selamat Datang di Portofolio Saya</h1>
-      <p class="text-xl mb-6 max-w-xl mx-auto">Saya seorang engineer instrumentasi dengan pengalaman di bidang kelistrikan dan pemeliharaan industri, fokus pada otomatisasi dan sistem kontrol modern.</p>
-
-      <!-- Foto Profil -->
-      <div class="flex justify-center mb-6">
-        <img src="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1711863026764?e=1731859200&v=beta&t=SrFZBURxCnDraoEDawyMzflDF4nymFhqxBibQT2QZTQ" alt="Foto Profil" class="rounded-full w-40 h-40 object-cover border-4 border-white shadow-xl transform transition-transform duration-500 hover:scale-110">
-      </div>
-
-      <!-- Tombol Lihat Profil LinkedIn -->
-      <a href="https://www.linkedin.com/in/marwanhusin/" target="_blank" class="bg-gradient-to-r from-gray-800 to-black text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-gray-700 transition transform duration-300 hover:scale-105">
-        Lihat Profil LinkedIn Saya
-      </a>
-    </div>
+  <section id="hero" class="hero">
+    <h1>Selamat datang di Portofolio Saya</h1>
+    <p>Saya Marwan Putra Haji Husin, seorang profesional di bidang Electrical Engineering, Instrumentation, dan Teknologi Komputer.</p>
+    <a href="#projects" class="button">Lihat Proyek Saya</a>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-20 bg-gray-800 text-center">
-    <h2 class="text-4xl font-extrabold text-gray-300 mb-8 fade-in">Tentang Saya</h2>
-    <p class="text-lg text-gray-400 mb-4 max-w-4xl mx-auto fade-in">
-      Sebagai Engineer Instrumentasi di PT DEXIN STEEL INDONESIA, saya fokus dalam pemeliharaan dan optimasi sistem kelistrikan serta pengendalian otomatis di industri smelter. Dengan pengalaman dalam troubleshooting dan pemeliharaan sistem instrumentasi, saya berkomitmen untuk meningkatkan efisiensi dan keandalan operasional. Selain itu, dengan latar belakang pendidikan di bidang Teknik Listrik dan Ilmu Komputer, saya menggabungkan keterampilan teknis dan inovasi teknologi terbaru dalam solusi industri.
-    </p>
-    <p class="text-lg text-gray-400 mb-4 max-w-4xl mx-auto fade-in">
-      Jika Anda tertarik untuk berkolaborasi atau mendiskusikan peluang, saya terbuka untuk berdiskusi lebih lanjut.
-    </p>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-20 bg-black">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-extrabold text-gray-300 mb-12 fade-in">Portofolio</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-        <!-- Portfolio Item -->
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-          <img src="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1711863026764?e=1731859200&v=beta&t=SrFZBURxCnDraoEDawyMzflDF4nymFhqxBibQT2QZTQ" alt="LinkedIn Project Image" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-xl font-semibold mb-2 text-white">Proyek Sistem Otomatisasi</h3>
-          <p class="text-gray-400">Deskripsi singkat tentang proyek ini, yang menunjukkan penerapan sistem otomatisasi untuk meningkatkan efisiensi produksi di industri.</p>
-          <a href="https://www.linkedin.com/posts/marwanhusin_hello-everyone-im-thrilled-to-share-a-glimpse-activity-7105749404036337664--yFn?utm_source=share&utm_medium=member_desktop" target="_blank" class="text-blue-500 hover:text-blue-400 transition">Lihat Detail Proyek</a>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Proyek-Proyek Saya</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project 1: LinkedIn Post -->
+        <div class="section-card bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://media.licdn.com/dms/image/v2/D5622AQE7YY_SeS64cA/feedshare-shrink_800/feedshare-shrink_800/0/1694142666046?e=1733961600&v=beta&t=eTLnEDfUGK8PQUhbzG5SkdV2zkwfutrZc7hg4DOpK_g" alt="Project Image" class="w-full">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold">Proyek Sistem Otomatisasi</h3>
+            <p class="text-gray-700 text-base mt-4">Deskripsi singkat tentang proyek ini, yang menunjukkan penerapan sistem otomatisasi untuk meningkatkan efisiensi produksi di industri.</p>
+            <a href="https://www.linkedin.com/posts/marwanhusin_hello-everyone-im-thrilled-to-share-a-glimpse-activity-7105749404036337664--yFn?utm_source=share&utm_medium=member_desktop" class="text-blue-500">Lihat Postingan</a>
+          </div>
         </div>
 
-        <!-- Portfolio Item with Post Image -->
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-          <!-- Post Image from LinkedIn -->
-          <img src="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1711863026764?e=1731859200&v=beta&t=SrFZBURxCnDraoEDawyMzflDF4nymFhqxBibQT2QZTQ" alt="Postingan LinkedIn" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-xl font-semibold mb-2 text-white">Postingan LinkedIn Saya</h3>
-          <p class="text-gray-400">Deskripsi singkat tentang postingan LinkedIn yang saya bagikan, termasuk topik atau insight yang dibagikan di dalamnya.</p>
-          <a href="https://www.linkedin.com/posts/marwanhusin_hello-everyone-im-thrilled-to-share-a-glimpse-activity-7105749404036337664--yFn?utm_source=share&utm_medium=member_desktop" target="_blank" class="text-blue-500 hover:text-blue-400 transition">Lihat Detail Postingan</a>
-        </div>
-
-        <!-- Portfolio Item -->
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-          <img src="https://via.placeholder.com/400" alt="Project Image" class="w-full h-48 object-cover rounded-md mb-4">
-          <h3 class="text-xl font-semibold mb-2 text-white">Proyek Pemeliharaan Sistem Kelistrikan</h3>
-          <p class="text-gray-400">Deskripsi proyek ini melibatkan pemeliharaan dan perbaikan sistem kelistrikan di fasilitas industri untuk memastikan kelancaran operasional.</p>
-        </div>
+        <!-- Add more projects here as needed -->
+        
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-gray-900 text-white text-center">
-    <h2 class="text-4xl font-extrabold mb-8 fade-in">Kontak</h2>
-    <p class="text-lg mb-4 fade-in">Saya terbuka untuk peluang kolaborasi dan diskusi lebih lanjut mengenai proyek-proyek baru. Jangan ragu untuk menghubungi saya!</p>
-    <a href="mailto:marwanhusin338@gmail.com" class="bg-white text-gray-900 py-3 px-8 rounded-full text-lg font-semibold hover:bg-gray-200 transition">Kirim Email</a>
-  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>Portofolio Saya | Dibuat dengan 💙 oleh Marwan Putra Haji Husin</p>
+  </footer>
 
 </body>
 </html>
