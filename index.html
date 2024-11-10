@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Web - Marwan Putra Haji Husin</title>
+  <title>Portofolio Web</title>
   
-  <!-- Menambahkan favicon -->
+  <!-- Favicon menggunakan foto profil LinkedIn -->
   <link rel="icon" href="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1711863026764?e=1731859200&v=beta&t=SrFZBURxCnDraoEDawyMzflDF4nymFhqxBibQT2QZTQ" type="image/png">
-  
+
   <!-- Menggunakan TailwindCSS untuk desain responsif dan modern -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+  
   <style>
     /* Custom Styles for Animations and Aesthetics */
     .card {
@@ -94,41 +96,38 @@
     }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
+
+<body class="bg-gray-100 font-sans leading-normal tracking-wider">
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
-    <h1>Selamat datang di Portofolio Saya</h1>
-    <p>Saya Marwan Putra Haji Husin, seorang profesional di bidang Electrical Engineering, Instrumentation, dan Teknologi Komputer.</p>
+    <h1>Selamat Datang di Portofolio Saya!</h1>
+    <p>Berikut adalah beberapa proyek dan pengalaman saya di bidang teknologi dan rekayasa.</p>
     <a href="#projects" class="button">Lihat Proyek Saya</a>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-20">
+  <section id="projects" class="py-16">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12">Proyek-Proyek Saya</h2>
+      <h2 class="text-3xl font-bold text-center mb-12">Proyek-Proyek Saya</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Project 1: LinkedIn Post -->
-        <div class="section-card bg-white shadow-lg rounded-lg overflow-hidden">
-          <img src="https://media.licdn.com/dms/image/v2/D5622AQE7YY_SeS64cA/feedshare-shrink_800/feedshare-shrink_800/0/1694142666046?e=1733961600&v=beta&t=eTLnEDfUGK8PQUhbzG5SkdV2zkwfutrZc7hg4DOpK_g" alt="Project Image" class="w-full">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold">Proyek Sistem Otomatisasi</h3>
-            <p class="text-gray-700 text-base mt-4">Deskripsi singkat tentang proyek ini, yang menunjukkan penerapan sistem otomatisasi untuk meningkatkan efisiensi produksi di industri.</p>
-            <a href="https://www.linkedin.com/posts/marwanhusin_hello-everyone-im-thrilled-to-share-a-glimpse-activity-7105749404036337664--yFn?utm_source=share&utm_medium=member_desktop" class="text-blue-500">Lihat Postingan</a>
-          </div>
+        <!-- Portfolio Item with Post Image -->
+        <div class="section-card bg-white p-6 rounded-lg shadow-md hover:scale-105">
+          <!-- Post Image from LinkedIn -->
+          <img src="https://media.licdn.com/dms/image/v2/D5622AQE7YY_SeS64cA/feedshare-shrink_800/feedshare-shrink_800/0/1694142666046?e=1733961600&v=beta&t=eTLnEDfUGK8PQUhbzG5SkdV2zkwfutrZc7hg4DOpK_g" alt="Postingan LinkedIn" class="w-full rounded-md mb-4">
+          <h3 class="text-xl font-semibold mb-2">Postingan LinkedIn Saya</h3>
+          <p class="text-gray-600">Deskripsi singkat tentang postingan LinkedIn yang saya bagikan, termasuk topik atau insight yang dibagikan di dalamnya.</p>
+          <a href="https://www.linkedin.com/posts/marwanhusin_hello-everyone-im-thrilled-to-share-a-glimpse-activity-7105749404036337664--yFn?utm_source=share&utm_medium=member_desktop" target="_blank">Lihat Detail Postingan</a>
         </div>
-
-        <!-- Add more projects here as needed -->
-        
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-6">
-    <p>Portofolio Saya | Dibuat dengan 💙 oleh Marwan Putra Haji Husin</p>
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2024 Marwan Putra Haji Husin. All rights reserved.</p>
   </footer>
 
 </body>
+
 </html>
