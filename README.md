@@ -1,24 +1,17 @@
-# 🌐 Marwan Husin — Portofolio Pribadi
+# 🌐 Marwan Husin - Personal Portfolio Website
 
-![GitHub repo size](https://img.shields.io/github/repo-size/marwanhusin/marwanhusin.github.io)
-![GitHub last commit](https://img.shields.io/github/last-commit/marwanhusin/marwanhusin.github.io)
-![GitHub language count](https://img.shields.io/github/languages/count/marwanhusin/marwanhusin.github.io)
-![GitHub top language](https://img.shields.io/github/languages/top/marwanhusin/marwanhusin.github.io)
-![GitHub license](https://img.shields.io/github/license/marwanhusin/marwanhusin.github.io)
+This is a responsive and minimalist portfolio website built using HTML and CSS. It showcases my professional background, skills, certifications, and achievements in the field of electrical and instrumentation engineering, with additional interests in automation and web development.
 
-Website portofolio responsif ini menampilkan latar belakang profesional saya sebagai **Electrical & Instrumentation Engineer**, sekaligus menjadi media untuk membagikan keahlian saya dalam otomasi industri, rekayasa kelistrikan, dan pengembangan teknologi.
+## 🧑‍💼 About Me
 
-## 🧑‍💼 Tentang Saya
+Hi, I'm **Marwan Putra Haji Husin** — a passionate Electrical & Instrumentation Engineer working in the steelmaking industry. I have hands-on experience in smelter operations, automation systems, and safety compliance (K3). I'm also currently pursuing a degree in Computer Science at BINUS University.
 
-Halo! Saya **Marwan Putra Haji Husin**, seorang teknisi elektro & instrumentasi yang saat ini bekerja di industri smelter baja. Saya juga tengah menempuh pendidikan S1 Informatika di BINUS secara daring. Website ini dibuat sebagai sarana untuk menunjukkan kompetensi, sertifikasi, dan pengalaman kerja saya dalam format digital.
+Visit my live portfolio here:  
+👉 **[marwanhusin.github.io](https://marwanhusin.github.io)**
 
-🔗 Lihat versi live:  
-👉 [https://marwanhusin.github.io](https://marwanhusin.github.io)
-
-## 🧱 Struktur Proyek
+## 📁 Project Structure
 
 ```bash
-📁 marwanhusin.github.io/
-├── index.html        # File utama HTML
-├── style.css         # Gaya visual dan responsif
-└── README.md         # Dokumentasi dan deskripsi proyek
+├── index.html        # Main HTML file
+├── style.css         # Custom CSS styling
+└── README.md         # Project description and documentation
