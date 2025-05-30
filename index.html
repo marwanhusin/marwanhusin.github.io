@@ -2,88 +2,255 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marwan Putra Haji Husin | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marwan Putra Haji Husin - Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1711863026764?e=1749214800&v=beta&t=QDEFRRzzkxP1kH2gJCEboIx1R-lepGpcifd_ZBzFX7s" alt="Profile Picture" class="profile-img">
-      <h1>Marwan Putra Haji Husin</h1>
-      <p class="tagline">Prompt Engineer | Electrical Engineer | Instrument Engineer | Steel Making | Tech Enthusiast</p>
-    </div>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Marwan Husin</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__btns">
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <main class="container">
-    <section>
-      <h2>Summary</h2>
-      <p>
-        I’m an Electrical and Instrumentation Engineer with hands-on experience in smelter processing and industrial automation. Currently working at PT Dexin Steel Indonesia in the IMIP area and studying Computer Science at BINUS. Passionate about integrating engineering, technology, and safety.
-      </p>
+  <main class="main">
+    <!-- Home Section -->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content grid">
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/marwanhusin/" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a href="https://marwanhusin.github.io/" target="_blank" class="home__social-icon">
+              <i class="uil uil-globe"></i>
+            </a>
+            <a href="mailto:marwanhusin338@gmail.com" class="home__social-icon">
+              <i class="uil uil-envelope"></i>
+            </a>
+          </div>
+
+          <div class="home__img">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1711863026764?e=1749214800&v=beta&t=QDEFRRzzkxP1kH2gJCEboIx1R-lepGpcifd_ZBzFX7s"
+              alt="Marwan Putra Haji Husin"
+            />
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">Marwan Putra Haji Husin</h1>
+            <h3 class="home__subtitle">Electrical & Instrument Engineer</h3>
+            <p class="home__description">
+              Prompt Engineer | Steel Making | Tech Enthusiast
+            </p>
+            <a href="#contact" class="button button--flex">
+              Contact Me
+              <i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <ul>
-        <li>📞 +62 822 3786 2408</li>
-        <li>✉️ marwanhusin338@gmail.com</li>
-        <li>🔗 <a href="https://www.linkedin.com/in/marwanhusin">LinkedIn</a></li>
-        <li>🌐 <a href="https://marwanhusin.github.io">marwanhusin.github.io</a></li>
-      </ul>
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">Profile Summary</span>
+
+      <div class="about__container container grid">
+        <p class="about__description">
+          Hi, I’m Marwan Putra Haji Husin. I’m an Electrical and Instrumentation Engineer with hands-on experience in smelter processing and industrial automation. I graduated from the Metal Industry Polytechnic of Morowali, majoring in Electric and Installation Engineering, and have been working in the field ever since.
+          <br /><br />
+          For almost 3 years, I’ve been part of PT Dexin Steel Indonesia at the Indonesia Morowali Industrial Park (IMIP). My work mostly involves maintaining and repairing electrical systems and instrumentation —especially during smelting, ladle handling, continuous casting, and slag recycling. I’ve also handled crane troubleshooting and supported various field operations in the steelmaking process.
+          <br /><br />
+          Along the way, I’ve earned certifications including Class 2 Prime Mover Operator, Industrial Automation Technician, and Occupational Safety and Health Expert.
+          <br /><br />
+          Right now, I’m also studying Computer Science online at BINUS University to expand my tech and automation skills further. I’m passionate about engineering, technology, and safety, always eager to learn and collaborate.
+        </p>
+      </div>
     </section>
 
-    <section>
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <strong>Electrical Engineer | PT Dexin Steel Indonesia</strong> <br />
-          <em>Jan 2024 – Present</em>
-          <p>Installed, maintained, and troubleshot electrical systems in heavy equipment and production facilities. Worked with PLC, SCADA, DCS systems and ensured K3 compliance.</p>
-        </li>
-        <li>
-          <strong>Instrument Engineer | PT Dexin Steel Indonesia</strong> <br />
-          <em>Feb 2023 – Present</em>
-          <p>Managed and calibrated instrumentation systems, integrated with automation control, ensured accurate production data and supported K3 safety procedures.</p>
-        </li>
-        <li>
-          <strong>Intern | PT Dexin Steel Indonesia</strong> <br />
-          <em>Feb 2021 – Oct 2022</em>
-          <p>Assisted with maintenance, calibration, and SCADA installations during apprenticeship at IMIP.</p>
-        </li>
-      </ul>
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Top Skills</h2>
+      <span class="section__subtitle">Technologies & Languages</span>
+
+      <div class="skills__container container grid">
+        <div class="skills__content">
+          <h3 class="skills__title">Programming & Databases</h3>
+          <div class="skills__box">
+            <ul class="skills__group">
+              <li class="skills__data">PHP</li>
+              <li class="skills__data">MySQL</li>
+              <li class="skills__data">C (Programming Language)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skills__content">
+          <h3 class="skills__title">Languages</h3>
+          <div class="skills__box">
+            <ul class="skills__group">
+              <li class="skills__data">Indonesian (Native or Bilingual)</li>
+              <li class="skills__data">English (Limited Working)</li>
+              <li class="skills__data">Chinese (Elementary)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>🎓 BINUS University – BSc Computer Science (2022 – Present)</li>
-        <li>🎓 Politeknik Industri Logam Morowali – Associate Degree in Electrical Engineering (2019 – 2022)</li>
-        <li>🎓 ITB – Bioenergy and Chemurgy Engineering (2017 – 2019, non-graduate)</li>
-      </ul>
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+      <h2 class="section__title">Experience</h2>
+      <span class="section__subtitle">Work History</span>
+
+      <div class="experience__container container grid">
+        <div class="experience__content">
+          <h3 class="experience__title">Electrical Engineer 电工</h3>
+          <span class="experience__company">PT Dexin Steel Indonesia</span>
+          <span class="experience__duration">January 2024 - Present</span>
+          <ul class="experience__list">
+            <li>Install, maintain, and repair electrical systems in smelter equipment and production facilities.</li>
+            <li>Troubleshoot control panels, motors, generators, and power distribution networks.</li>
+            <li>Repair cranes and electrical equipment during slag cleaning, ensuring minimal downtime.</li>
+            <li>Manage projects upgrading electrical systems for efficiency and reliability.</li>
+            <li>Collaborate on integration of electrical and instrumentation systems using PLC, SCADA, and DCS.</li>
+            <li>Ensure compliance with K3 safety standards in all activities.</li>
+          </ul>
+        </div>
+
+        <div class="experience__content">
+          <h3 class="experience__title">Instrument Engineer 仪表工</h3>
+          <span class="experience__company">PT Dexin Steel Indonesia</span>
+          <span class="experience__duration">February 2023 - Present</span>
+          <ul class="experience__list">
+            <li>Maintain, calibrate, and troubleshoot instrumentation systems in the smelter.</li>
+            <li>Conduct preventive maintenance on sensors and measurement devices.</li>
+            <li>Lead repair and recalibration during production downtime to reduce delays.</li>
+            <li>Integrate instrumentation with control systems (PLC, SCADA, DCS) for process automation.</li>
+            <li>Ensure strict adherence to K3 health and safety standards.</li>
+          </ul>
+        </div>
+
+        <div class="experience__content">
+          <h3 class="experience__title">Intern 实习生</h3>
+          <span class="experience__company">PT Dexin Steel Indonesia</span>
+          <span class="experience__duration">February 2021 - October 2022</span>
+          <ul class="experience__list">
+            <li>Assisted in maintenance and calibration of instrumentation systems.</li>
+            <li>Supported PLC and SCADA control systems installation and monitoring.</li>
+            <li>Participated in troubleshooting and repair of critical instruments.</li>
+            <li>Ensured K3 safety standards throughout all maintenance stages.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <p><strong>Top Skills:</strong> PHP, MySQL, C</p>
-      <p><strong>Languages:</strong> Indonesian (Native), English (Limited Working), Chinese (Elementary)</p>
-      <p><strong>Certifications:</strong> Responsive Web Design, Safety Man, ISO 14001, Class 2 Prime Mover Operator, Industrial Automation Technician, K3 Expert</p>
-    </section>
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
 
-    <section>
-      <h2>Achievements</h2>
-      <ul>
-        <li>🏀 Runner-up Honda DBL East Nusa Tenggara Series 2015</li>
-        <li>🥈 Silver Medalist - TPB Cup Basketball 2018</li>
-        <li>🎓 Awardee – Associate Degree Scholarship at Morowali Polytechnic</li>
-      </ul>
+      <div class="contact__container container grid">
+        <div class="contact__info">
+          <div class="contact__card">
+            <i class="uil uil-phone contact__card-icon"></i>
+            <h3 class="contact__card-title">Mobile</h3>
+            <span class="contact__card-data">+62 822 3786 2408</span>
+          </div>
+
+          <div class="contact__card">
+            <i class="uil uil-envelope contact__card-icon"></i>
+            <h3 class="contact__card-title">Email</h3>
+            <span class="contact__card-data">marwanhusin338@gmail.com</span>
+          </div>
+
+          <div class="contact__card">
+            <i class="uil uil-map-marker contact__card-icon"></i>
+            <h3 class="contact__card-title">Location</h3>
+            <span class="contact__card-data">Morowali, Central Sulawesi, Indonesia</span>
+          </div>
+        </div>
+
+        <form action="mailto:marwanhusin338@gmail.com" method="POST" class="contact__form">
+          <div class="contact__form-div">
+            <label for="name" class="contact__form-tag">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="contact__form-input"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+
+          <div class="contact__form-div">
+            <label for="email" class="contact__form-tag">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="contact__form-input"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+
+          <div class="contact__form-div contact__form-area">
+            <label for="message" class="contact__form-tag">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              class="contact__form-input"
+              placeholder="Write your message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="button button--flex">
+            Send Message
+            <i class="uil uil-message button__icon"></i>
+          </button>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Marwan Husin. All rights reserved.</p>
+  <footer class="footer">
+    <div class="footer__container container">
+      <p class="footer__copy">
+        &copy; 2025 Marwan Putra Haji Husin. All rights reserved.
+      </p>
+    </div>
   </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
