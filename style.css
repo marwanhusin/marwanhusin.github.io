@@ -1,145 +1,121 @@
 /* Reset dasar */
 * {
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f9f9f9;
   color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
+/* Body dan kontainer utama */
+body {
+  background-color: #f9f9f9;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px 40px;
+}
+
+/* Header dengan nama dan jabatan */
 header {
-  background-color: #0a66c2;
-  color: white;
-  padding: 30px 20px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
 }
 
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 5px;
+  color: #2c3e50;
 }
 
-header p {
-  font-weight: 300;
+header h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #7f8c8d;
+}
+
+/* Section summary */
+.summary {
+  margin-bottom: 30px;
   font-size: 1.1rem;
+  color: #555;
 }
 
-nav {
-  background-color: #004182;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* Contact info */
+.contact-info {
+  margin-bottom: 30px;
 }
 
-nav a {
-  color: white;
+.contact-info a {
+  color: #2980b9;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 8px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
 }
 
-nav a:hover {
-  background-color: #003366;
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
+/* Section Experience dan Education */
 section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-  flex-grow: 1;
+  margin-bottom: 40px;
 }
 
-#hero {
-  text-align: center;
+section h3 {
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  color: #2980b9;
 }
 
-#hero img {
-  border-radius: 50%;
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border: 4px solid white;
-  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),
-              0 4px 6px -2px rgba(0,0,0,0.05);
-  transition: transform 0.5s ease-in-out;
+.job, .education {
   margin-bottom: 20px;
 }
 
-#hero img:hover {
-  transform: scale(1.1);
+.job h4, .education h4 {
+  font-weight: 600;
+  color: #34495e;
 }
 
-h2 {
-  margin-bottom: 15px;
-  border-bottom: 3px solid #0a66c2;
-  padding-bottom: 8px;
-  color: #0a66c2;
-  font-size: 1.8rem;
+.job p, .education p {
+  font-size: 0.95rem;
+  color: #666;
 }
 
-ul {
+.job ul {
   list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 10px;
+  margin-left: 20px;
+  color: #555;
 }
 
-.experience-item, .education-item, .skill-item {
-  margin-bottom: 25px;
+/* Skills and Certifications */
+.skills, .certifications, .languages, .awards {
+  margin-bottom: 30px;
 }
 
-footer {
-  background-color: #0a66c2;
-  color: white;
-  padding: 20px 10px;
-  text-align: center;
-  margin-top: 40px;
-  font-size: 0.9rem;
-  user-select: none;
-}
-
-.contact-link {
-  color: #0a66c2;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.contact-link:hover {
-  color: #004182;
-  text-decoration: underline;
+.skills ul, .certifications ul, .languages ul, .awards ul {
+  list-style-type: square;
+  margin-left: 20px;
+  color: #555;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
   header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-  nav {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  section {
-    margin: 20px 15px;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  #hero img {
-    width: 130px;
-    height: 130px;
+
+  header h2 {
+    font-size: 1rem;
   }
 }
