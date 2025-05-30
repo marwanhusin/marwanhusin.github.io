@@ -1,21 +1,41 @@
+# 💼 Marwan Husin - Portfolio Website
+
+Welcome to my responsive portfolio website!  
+This project showcases my professional background, technical skills, certifications, and experience in the electrical, instrumentation, and smelter industry.
+
+🌐 Live Site: [marwanhusin.github.io](https://marwanhusin.github.io)
 
 ---
 
-## 3. README.md (untuk GitHub repo kamu)
+## 📌 Features
 
-```md
-# Marwan Husin Portfolio
+- Clean and modern responsive design
+- Professional layout with HTML5 & CSS3
+- Optimized for all devices (mobile, tablet, desktop)
+- Easy to customize and expand
 
-This is the personal website of **Marwan Putra Haji Husin**, an Electrical & Instrumentation Engineer with experience in smelter processing, safety (K3), and automation systems.
+---
 
-## 🔧 Tech Stack
+## 🧰 Tech Stack
 
-- HTML5 / CSS3
-- Responsive Web Design (Flexbox)
-- GitHub Pages
+- HTML5
+- CSS3 (custom styling)
+- Google Fonts (Poppins)
+- Responsive Design (Media Queries)
 
-## 🔗 Links
+---
 
-- [Portfolio Website](https://marwanhusin.github.io)
-- [LinkedIn](https://linkedin.com/in/marwanhusin)
-- [Email](mailto:marwanhusin338@gmail.com)
+## 📷 Preview
+
+![Preview of portfolio](https://user-images.githubusercontent.com/0000000/portfolio-preview.png)  
+*Replace this screenshot with your live preview once hosted.*
+
+---
+
+## 🛠️ How to Use
+
+1. **Clone the Repository:**
+
+```bash
+git clone https://github.com/marwanhusin/marwanhusin.github.io.git
+cd marwanhusin.github.io
