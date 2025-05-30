@@ -1,121 +1,80 @@
-/* Reset dasar */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
   color: #333;
 }
 
-/* Body dan kontainer utama */
-body {
-  background-color: #f9f9f9;
-  padding: 20px;
-  line-height: 1.6;
-}
-
 .container {
-  max-width: 900px;
+  width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 30px 40px;
+  padding: 2rem;
 }
 
-/* Header dengan nama dan jabatan */
 header {
+  background: #1f2937;
+  color: #fff;
   text-align: center;
-  margin-bottom: 30px;
+  padding: 2rem 0;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 5px;
-  color: #2c3e50;
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 1rem;
 }
 
-header h2 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: #7f8c8d;
+.tagline {
+  font-size: 1rem;
+  color: #9ca3af;
 }
 
-/* Section summary */
-.summary {
-  margin-bottom: 30px;
-  font-size: 1.1rem;
-  color: #555;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Contact info */
-.contact-info {
-  margin-bottom: 30px;
+main section {
+  margin-top: 2rem;
 }
 
-.contact-info a {
-  color: #2980b9;
+h2 {
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #d1d5db;
+  padding-bottom: 0.3rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #2563eb;
   text-decoration: none;
 }
 
-.contact-info a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-/* Section Experience dan Education */
-section {
-  margin-bottom: 40px;
-}
-
-section h3 {
-  border-bottom: 2px solid #2980b9;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
-  color: #2980b9;
-}
-
-.job, .education {
-  margin-bottom: 20px;
-}
-
-.job h4, .education h4 {
-  font-weight: 600;
-  color: #34495e;
-}
-
-.job p, .education p {
-  font-size: 0.95rem;
-  color: #666;
-}
-
-.job ul {
-  list-style-type: disc;
-  margin-left: 20px;
-  color: #555;
-}
-
-/* Skills and Certifications */
-.skills, .certifications, .languages, .awards {
-  margin-bottom: 30px;
-}
-
-.skills ul, .certifications ul, .languages ul, .awards ul {
-  list-style-type: square;
-  margin-left: 20px;
-  color: #555;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .container {
-    padding: 20px;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  header h2 {
-    font-size: 1rem;
-  }
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #1f2937;
+  color: white;
+  margin-top: 2rem;
 }
