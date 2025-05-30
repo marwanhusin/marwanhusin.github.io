@@ -44,6 +44,8 @@ nav ul li a {
   height: auto;
   border-radius: 50%;
   margin: 15px 0;
+  border: 3px solid #fff; /* Border putih untuk gambar profil */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
 }
 
 h1 {
