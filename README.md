@@ -1,34 +1,28 @@
-# Marwan Putra Haji Husin — Portfolio Web
+# Portfolio Marwan Putra Haji Husin
 
-Welcome to my personal portfolio website! 🚀
+![Profile Image](https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1711863026764?e=1749214800&v=beta&t=QDEFRRzzkxP1kH2gJCEboIx1R-lepGpcifd_ZBzFX7s)
 
-I’m **Marwan Putra Haji Husin**, an Electrical Engineer with hands-on experience in industrial smelter maintenance, instrumentation, and automation. I build clean, responsive, and modern web projects to showcase my skills, projects, and professional journey.
+## About Me
 
----
+Hi! I'm **Marwan Putra Haji Husin**, an Electrical and Instrumentation Engineer based in Morowali, Indonesia. I have a passion for industrial automation, electrical systems maintenance, and instrumentation, with almost 3 years of experience in the steel smelting industry. Currently, I'm expanding my tech skills by studying Computer Science at BINUS University.
 
-## 🔥 Features
+## Features
 
-- **Fully responsive design** for seamless experience on all devices  
-- Clean, minimalistic, and professional UI built with HTML5 & CSS3  
-- Smooth scrolling navigation with active link highlighting  
-- Contact form integrated with email support  
-- Highlighted sections for About, Skills, Experience, Projects & Contact  
-- Modern typography & color scheme for easy readability  
-- Optimized for performance and accessibility  
+- Clean, minimal, and responsive design  
+- Professional summary and experience  
+- Contact information with clickable links  
+- Skillset and language proficiency  
+- Certifications and awards  
+- Education background  
 
----
-
-## 🛠 Tech Stack
+## Technologies Used
 
 - HTML5  
-- CSS3 (Custom Properties & Flexbox/Grid)  
-- Google Fonts & Icon Libraries (e.g. Unicons)  
-- Responsive & mobile-first design principles  
+- CSS3 (Flexbox, Responsive Design)  
+- Google Fonts (Inter)
 
----
+## How to Use
 
-## 🚀 Getting Started
-
-1. Clone this repo  
+1. Clone this repository:
    ```bash
-   git clone https://github.com/bedimcode/portfolio-responsive-complete.git
+   git clone https://github.com/marwanhusin/portfolio.git
