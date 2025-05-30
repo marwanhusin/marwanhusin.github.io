@@ -4,21 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-        content="Portofolio profesional Marwan Husin - Engineer Instrumentasi dengan pengalaman di sistem kelistrikan dan otomatisasi industri." />
+    <meta name="description" content="Portofolio profesional Marwan Husin - Engineer Instrumentasi dengan pengalaman di sistem kelistrikan dan otomatisasi industri." />
     <meta name="author" content="Marwan Husin" />
     <meta name="robots" content="index, follow" />
-    <title>Portofolio Marwan Husin</title>
-    <link rel="icon"
-        href="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1711863026764?e=1731859200&v=beta&t=SrFZBURxCnDraoEDawyMzflDF4nymFhqxBibQT2QZTQ"
-        type="image/png" />
+    <title>Portofolio Saya</title>
+    <link rel="icon" href="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1711863026764?e=1731859200&v=beta&t=SrFZBURxCnDraoEDawyMzflDF4nymFhqxBibQT2QZTQ" type="image/png" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-
+        /* Custom animations */
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -35,99 +29,78 @@
     </style>
 </head>
 
-<body class="bg-black text-white">
+<body class="font-sans bg-black text-white">
 
     <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-900 to-blue-700 shadow-lg sticky top-0 z-50">
-        <nav class="container mx-auto py-5 flex items-center justify-between px-4 md:px-0">
-            <a href="#" class="text-3xl font-bold tracking-wide text-white" aria-label="Beranda Marwan Husin">Marwan
-                Husin</a>
-            <ul class="flex space-x-6 text-white text-lg">
-                <li><a href="#about" class="hover:text-blue-300 transition focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Tentang
-                        Saya</a></li>
-                <li><a href="#portfolio"
-                        class="hover:text-blue-300 transition focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Portofolio</a>
-                </li>
-                <li><a href="#contact"
-                        class="hover:text-blue-300 transition focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">Kontak</a>
-                </li>
+    <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white shadow-lg">
+        <nav class="container mx-auto py-6 flex items-center justify-between">
+            <a href="#" class="text-3xl font-bold tracking-wide text-white">Marwan Husin</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-white hover:text-blue-300 transition">Tentang Saya</a></li>
+                <li><a href="#portfolio" class="text-white hover:text-blue-300 transition">Portofolio</a></li>
+                <li><a href="#contact" class="text-white hover:text-blue-300 transition">Kontak</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero"
-        class="relative bg-gradient-to-r from-blue-900 to-blue-700 py-40 text-center overflow-hidden">
-        <div class="absolute inset-0 bg-black opacity-60"></div>
-        <div class="relative z-10 fade-in max-w-4xl mx-auto px-4">
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-                Selamat Datang di Portofolio Saya
-            </h1>
-            <p class="text-xl md:text-2xl mb-10 text-blue-100 max-w-3xl mx-auto">
-                Saya seorang engineer instrumentasi dengan pengalaman di bidang kelistrikan dan pemeliharaan industri,
-                fokus pada otomatisasi dan sistem kontrol modern.
-            </p>
+    <section id="hero" class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-40 text-center relative">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 fade-in">
+            <h1 class="text-5xl font-extrabold leading-tight mb-6">Selamat Datang di Portofolio Saya</h1>
+            <p class="text-xl mb-6 max-w-xl mx-auto">Saya seorang engineer instrumentasi dengan pengalaman di bidang kelistrikan dan pemeliharaan industri, fokus pada otomatisasi dan sistem kontrol modern.</p>
 
             <!-- Foto Profil -->
-            <div class="flex justify-center mb-10">
-                <img src="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1711863026764?e=1731859200&v=beta&t=SrFZBURxCnDraoEDawyMzflDF4nymFhqxBibQT2QZTQ"
-                    alt="Foto Profil Marwan Husin" class="rounded-full w-40 h-40 object-cover border-4 border-white shadow-xl transition-transform duration-500 hover:scale-110"
-                    aria-label="Foto Profil Marwan Husin" />
+            <div class="flex justify-center mb-6">
+                <img src="https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png" alt="Foto Profil Marwan Husin" class="rounded-full w-40 h-40 object-cover border-4 border-white shadow-xl transform transition-transform duration-500 hover:scale-110" aria-label="Foto Profil Marwan Husin" />
             </div>
 
-            <!-- Tombol LinkedIn -->
-            <a href="https://www.linkedin.com/in/marwanhusin/" target="_blank" rel="noopener noreferrer"
-                class="inline-block bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 hover:from-blue-700 hover:to-blue-500 transform hover:scale-105 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-400">
+            <!-- Tombol Lihat Profil LinkedIn -->
+            <a href="https://www.linkedin.com/in/marwanhusin/" target="_blank" class="bg-gradient-to-r from-blue-800 to-blue-600 text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 hover:from-blue-700 hover:to-blue-500 transform hover:scale-105 shadow-lg hover:shadow-xl">
                 Lihat Profil LinkedIn Saya
             </a>
+
         </div>
     </section>
 
-    <main class="container mx-auto px-4 md:px-0">
-
+    <main>
         <!-- About Section -->
-        <section id="about" class="py-20 bg-blue-800 rounded-lg shadow-lg fade-in max-w-5xl mx-auto text-center">
+        <section id="about" class="py-20 bg-blue-800 text-center fade-in">
             <h2 class="text-4xl font-extrabold text-blue-300 mb-8">Tentang Saya</h2>
-            <p class="text-lg text-gray-200 mb-6 max-w-3xl mx-auto leading-relaxed">
+            <p class="text-lg text-gray-200 mb-4 max-w-4xl mx-auto">
                 Sebagai Engineer Instrumentasi di PT DEXIN STEEL INDONESIA, saya fokus dalam pemeliharaan dan optimasi sistem kelistrikan serta pengendalian otomatis di industri smelter. Dengan pengalaman dalam troubleshooting dan pemeliharaan sistem instrumentasi, saya berkomitmen untuk meningkatkan efisiensi dan keandalan operasional. Selain itu, dengan latar belakang pendidikan di bidang Teknik Listrik dan Ilmu Komputer, saya menggabungkan keterampilan teknis dan inovasi teknologi terbaru dalam solusi industri.
             </p>
-            <p class="text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            <p class="text-lg text-gray-200 mb-4 max-w-4xl mx-auto">
                 Jika Anda tertarik untuk berkolaborasi atau mendiskusikan peluang, saya terbuka untuk berdiskusi lebih lanjut.
             </p>
         </section>
 
         <!-- Portfolio Section -->
-        <section id="portfolio" class="py-20 bg-black mt-20">
-            <h2 class="text-4xl font-extrabold text-blue-300 mb-12 text-center fade-in">Portofolio</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
-                <!-- Portfolio Item -->
-                <article
-                    class="bg-blue-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl mx-auto max-w-xs">
-                    <img src="https://media.licdn.com/dms/image/v2/D5622AQE7YY_SeS64cA/feedshare-shrink_800/feedshare-shrink_800/0/1694142666046?e=1733961600&amp;v=beta&amp;t=eTLnEDfUGK8PQUhbzG5SkdV2zkwfutrZc7hg4DOpK_g"
-                        alt="Proyek Sistem Otomatisasi di Industri"
-                        class="w-full h-48 object-cover rounded-md mb-4" aria-label="Proyek Sistem Otomatisasi di Industri" />
-                    <h3 class="text-xl font-semibold mb-2 text-white">Pengalaman Proyek Sistem Otomatisasi di Industri</h3>
-                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">Proyek ini menunjukkan penerapan sistem
-                        otomatisasi untuk meningkatkan efisiensi produksi dan meminimalisir kesalahan operasional di
-                        lingkungan industri. Pengalaman ini melibatkan pengembangan dan implementasi solusi teknologi
-                        yang meningkatkan proses produksi.</p>
-                    <a href="https://www.linkedin.com/posts/marwanhusin_hello-everyone-im-thrilled-to-share-a-glimpse-activity-7105749404036337664--yFn?utm_source=share&amp;utm_medium=member_desktop"
-                        target="_blank" rel="noopener noreferrer"
-                        class="text-blue-500 hover:text-blue-400 transition text-sm font-medium">Lihat Detail Proyek</a>
-                </article>
+        <section id="portfolio" class="py-20 bg-black">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-extrabold text-blue-300 mb-12 fade-in">Portofolio</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Portfolio Item -->
+                    <article class="bg-blue-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl mx-auto max-w-xs">
+                        <img src="https://media.licdn.com/dms/image/v2/D5622AQE7YY_SeS64cA/feedshare-shrink_800/feedshare-shrink_800/0/1694142666046?e=1733961600&amp;v=beta&amp;t=eTLnEDfUGK8PQUhbzG5SkdV2zkwfutrZc7hg4DOpK_g" alt="Proyek Sistem Otomatisasi di Industri" class="w-full h-48 object-cover rounded-md mb-4" aria-label="Proyek Sistem Otomatisasi di Industri" />
+                        <h3 class="text-xl font-semibold mb-2 text-white">Pengalaman Proyek Sistem Otomatisasi di Industri</h3>
+                        <p class="text-gray-400">Proyek ini menunjukkan penerapan sistem otomatisasi untuk meningkatkan efisiensi produksi dan meminimalisir kesalahan operasional di lingkungan industri. Pengalaman ini melibatkan pengembangan dan implementasi solusi teknologi yang meningkatkan proses produksi.</p>
+                        <a href="https://www.linkedin.com/posts/marwanhusin_hello-everyone-im-thrilled-to-share-a-glimpse-activity-7105749404036337664--yFn?utm_source=share&amp;utm_medium=member_desktop" target="_blank" class="text-blue-500 hover:text-blue-400 transition">Lihat Detail Proyek</a>
+                    </article>
 
-                <!-- Tambah proyek lain di sini -->
-
+                    <!-- Additional Portfolio Items -->
+                    <!-- Add more items as necessary here -->
+                </div>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="py-20 bg-black text-center fade-in mt-20">
+        <section id="skills" class="py-20 bg-black text-center fade-in">
             <h2 class="text-4xl font-extrabold text-blue-300 mb-8">Keahlian</h2>
-            <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-16 max-w-5xl mx-auto">
-                <div class="text-gray-200 text-left">
+            <div class="flex justify-center space-x-8">
+                <div class="text-gray-200">
                     <h3 class="text-xl font-semibold mb-4">Teknologi & Software</h3>
-                    <ul class="list-disc list-inside space-y-2">
+                    <ul class="list-disc text-left">
                         <li>Microsoft Office</li>
                         <li>TIA Portal</li>
                         <li>Visual Studio Code</li>
@@ -135,9 +108,9 @@
                         <li>MySQL</li>
                     </ul>
                 </div>
-                <div class="text-gray-200 text-left">
+                <div class="text-gray-200">
                     <h3 class="text-xl font-semibold mb-4">Keahlian Teknik</h3>
-                    <ul class="list-disc list-inside space-y-2">
+                    <ul class="list-disc text-left">
                         <li>Pemrograman PLC</li>
                         <li>Pemeliharaan Sistem Elektrikal</li>
                         <li>Sistem Kontrol Industri</li>
@@ -148,22 +121,17 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-blue-800 rounded-lg shadow-lg fade-in mt-20 text-center max-w-4xl mx-auto">
+        <section id="contact" class="py-20 bg-blue-800 text-center fade-in">
             <h2 class="text-4xl font-extrabold text-blue-300 mb-8">Kontak</h2>
-            <p class="text-lg text-gray-200 mb-8 max-w-xl mx-auto leading-relaxed">
-                Jika Anda ingin berkolaborasi atau berbicara lebih lanjut, silakan hubungi saya melalui informasi kontak
-                di bawah ini.
-            </p>
-            <a href="mailto:marwanhusin338@gmail.com"
-                class="inline-block bg-blue-600 hover:bg-blue-500 text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-400">
+            <p class="text-lg text-gray-200 mb-4">Jika Anda ingin berkolaborasi atau berbicara lebih lanjut, silakan hubungi saya melalui informasi kontak di bawah ini.</p>
+            <a href="mailto:marwanhusin338@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white py-3 px-8 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105">
                 Kirim Email
             </a>
         </section>
-
     </main>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-center py-8 text-white mt-20">
+    <footer class="bg-blue-900 text-center py-8 text-white">
         <p>&copy; 2024 Marwan Husin. Semua hak dilindungi.</p>
     </footer>
 
