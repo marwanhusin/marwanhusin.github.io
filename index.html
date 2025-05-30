@@ -1,92 +1,133 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portofolio Marwan Putra Haji Husin, seorang Electrical Engineer dan Instrument Technician dengan pengalaman di industri smelter." />
-    <title>Portofolio Marwan - Electrical Engineer</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Tentang Saya</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#certifications">Sertifikasi</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <img src="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1711863026764?e=1749222000&v=beta&t=47quNDabvRrckC22up5Ijb03jeePZWvW7YaMYjULG1k" alt="Foto Marwan Putra Haji Husin" class="profile-pic" />
-            <h1>Marwan Putra Haji Husin</h1>
-            <p class="position">Electrical Engineer & Instrument Technician</p>
-        </div>
-    </header>
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <main>
-        <section id="about">
-            <h2>Tentang Saya</h2>
-            <p>
-                Saya seorang teknisi elektro dan instrumentasi berpengalaman di industri smelter. Dengan keahlian dalam pemrograman PLC, kalibrasi instrumen, dan desain panel, saya berkomitmen untuk memberikan solusi yang efisien dan aman dalam setiap proyek yang saya kerjakan. Saya juga memiliki minat yang besar dalam pengembangan perangkat lunak dan teknologi terbaru.
-            </p>
-        </section>
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-        <section id="skills">
-            <h2>Keahlian</h2>
-            <ul class="skills-list">
-                <li>PLC Programming</li>
-                <li>Maintenance Electrical</li>
-                <li>Instrument Calibration</li>
-                <li>TIA Portal</li>
-                <li>Arduino / Microcontroller</li>
-                <li>Pneumatic & Sensor</li>
-                <li>Safety (K3)</li>
-                <li>Panel Design</li>
-            </ul>
-        </section>
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
 
-        <section id="projects">
-            <h2>Proyek Industri</h2>
-            <div class="project-card">
-                <h3>Maintenance Panel Listrik di Smelter</h3>
-                <p>Perawatan dan pengecekan sistem distribusi tegangan di area tungku peleburan.</p>
-                <a href="#" class="project-link">Lihat Proyek</a>
-            </div>
-            <div class="project-card">
-                <h3>Pemrograman PLC untuk Cooling System</h3>
-                <p>Implementasi kontrol otomatis untuk sistem pendingin furnace.</p>
-                <a href="#" class="project-link">Lihat Proyek</a>
-            </div>
-            <div class="project-card">
-                <h3>Kalibrasi Sensor Temperatur & Flow</h3>
-                <p>Kalibrasi sensor pada pipa industri berbasis standar kalibrasi nasional.</p>
-                <a href="#" class="project-link">Lihat Proyek</a>
-            </div>
-        </section>
+nav ul {
+  list-style: none;
+  padding: 0;
+}
 
-        <section id="certifications">
-            <h2>Sertifikasi</h2>
-            <ul class="cert-list">
-                <li>
-                    <img src="images/sertifikat-bnsp.png" alt="Sertifikat BNSP - Automation Technician" /> Sertifikat BNSP - Automation Technician
-                </li>
-                <li>
-                    <img src="images/sertifikat-k3.png" alt="Sertifikat K3 Umum - Kementerian Ketenagakerjaan" /> Sertifikat K3 Umum - Kementerian Ketenagakerjaan
-                </li>
-            </ul>
-        </section>
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
 
-        <section id="contact">
-            <h2>Kontak</h2>
-            <p>Email: <a href="mailto:marwanhusin338@gmail.com">marwanhusin338@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/marwanhusin" target="_blank" rel="noopener noreferrer">linkedin.com/in/marwanhusin</a></p>
-        </section>
-    </main>
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    <footer>
-        <p>&copy; 2023 Marwan Putra Haji Husin. Semua hak dilindungi.</p>
-    </footer>
-</body>
-</html>
+.header-content {
+  margin: 20px 0;
+}
+
+.profile-pic {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin: 15px 0;
+  border: 3px solid #fff; /* Border putih untuk gambar profil */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.position {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.skills-list, .cert-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li, .cert-list li {
+  background: #e9ecef;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.project-card {
+  margin: 15px 0;
+  padding: 15px;
+  background: #e9ecef;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.project-link:hover {
+  background: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #007bff;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: underline;
+}
