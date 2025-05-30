@@ -1,41 +1,19 @@
-# 💼 Marwan Husin - Portfolio Website
+# Portofolio Marwan Putra Haji Husin
 
-Welcome to my responsive portfolio website!  
-This project showcases my professional background, technical skills, certifications, and experience in the electrical, instrumentation, and smelter industry.
+Website portofolio sederhana ini dibuat menggunakan HTML dan CSS saja, cocok untuk menampilkan profil seorang Electrical Engineer dan Teknisi Instrumentasi.
 
-🌐 Live Site: [marwanhusin.github.io](https://marwanhusin.github.io)
+## Struktur
 
----
+- `index.html`: Halaman utama portofolio
+- `style.css`: Styling untuk tampilan website
+- `images/`: Folder berisi foto profil dan logo sertifikat
 
-## 📌 Features
+## Cara pakai
 
-- Clean and modern responsive design
-- Professional layout with HTML5 & CSS3
-- Optimized for all devices (mobile, tablet, desktop)
-- Easy to customize and expand
-
----
-
-## 🧰 Tech Stack
-
-- HTML5
-- CSS3 (custom styling)
-- Google Fonts (Poppins)
-- Responsive Design (Media Queries)
+- Buka `index.html` di browser favoritmu.
+- Edit file HTML untuk menyesuaikan konten dengan profilmu.
 
 ---
 
-## 📷 Preview
-
-![Preview of portfolio](https://user-images.githubusercontent.com/0000000/portfolio-preview.png)  
-*Replace this screenshot with your live preview once hosted.*
-
----
-
-## 🛠️ How to Use
-
-1. **Clone the Repository:**
-
-```bash
-git clone https://github.com/marwanhusin/marwanhusin.github.io.git
-cd marwanhusin.github.io
+Email: marwanhusin338@gmail.com  
+LinkedIn: https://linkedin.com/in/marwanhusin
