@@ -1,184 +1,244 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portofolio Marwan Husin</title>
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Profil Marwan Putra Haji Husin</title>
+<style>
+  /* Reset dasar */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 20px;
+  }
+  a {
+    color: #0073b1; /* LinkedIn blue */
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  h1, h2, h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #0073b1;
+    padding-bottom: 0.3rem;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  }
+  .section {
+    margin-bottom: 2rem;
+  }
+  .contact-info p,
+  .top-skills ul,
+  .languages ul,
+  .certifications ul,
+  .honors ul,
+  .experience ul,
+  .education ul {
+    margin: 0.25rem 0 0.5rem 1.5rem;
+  }
+  ul {
+    list-style-type: disc;
+  }
+  .summary p {
+    white-space: pre-wrap;
+  }
+  .experience-item {
+    margin-bottom: 1.5rem;
+  }
+  .experience-item h3 {
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+  .experience-item .period {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.7rem;
+  }
+  @media (max-width: 600px) {
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
+      padding: 10px;
     }
-    header {
-      background-color: #0a66c2;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+    .container {
+      padding: 20px 15px;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 5px;
-    }
-    header p {
-      font-size: 1.1rem;
-      font-weight: 300;
-    }
-    nav {
-      background-color: #004182;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      padding: 6px 12px;
-      border-radius: 4px;
-    }
-    nav a:hover {
-      background-color: #003366;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    #hero {
-      text-align: center;
-    }
-    #hero img {
-      border-radius: 50%;
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border: 4px solid white;
-      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),
-                  0 4px 6px -2px rgba(0,0,0,0.05);
-      transition: transform 0.5s ease-in-out;
-      margin-bottom: 20px;
-    }
-    #hero img:hover {
-      transform: scale(1.1);
-    }
-    h2 {
-      margin-bottom: 15px;
-      border-bottom: 2px solid #0a66c2;
-      padding-bottom: 6px;
-      color: #0a66c2;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    .experience-item, .education-item, .skill-item {
-      margin-bottom: 15px;
-    }
-    footer {
-      text-align: center;
-      background-color: #0a66c2;
-      color: white;
-      padding: 15px 10px;
-      margin-top: 40px;
-    }
-    .contact-link {
-      color: #0a66c2;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .contact-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Marwan Putra Haji Husin</h1>
-    <p>Electrical Instrumentation & Automation Engineer | Industrial Maintenance Specialist</p>
-  </header>
-  <nav>
-    <a href="#about">Tentang Saya</a>
-    <a href="#experience">Pengalaman</a>
-    <a href="#education">Pendidikan</a>
-    <a href="#skills">Keahlian</a>
-    <a href="#contact">Kontak</a>
-  </nav>
-  <section id="hero">
-    <img src="https://media.licdn.com/dms/image/v2/D5635AQHZbdjfw2UJoQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1711863026764?e=1749214800&v=beta&t=QDEFRRzzkxP1kH2gJCEboIx1R-lepGpcifd_ZBzFX7s" alt="Foto Profil Marwan Husin" aria-label="Foto Profil Marwan Husin">
-    <h2>Tentang Saya</h2>
-    <p>
-      Saya adalah Electrical Instrumentation & Automation Engineer dengan pengalaman industri di bidang maintenance smelter, electrical systems, dan instrumentation. Saat ini bekerja di PT Dexin Steel Indonesia dengan fokus pada pemeliharaan peralatan listrik dan instrumentasi untuk proses produksi baja.
-    </p>
-  </section>
+<div class="container">
 
-  <section id="experience">
-    <h2>Pengalaman Kerja</h2>
-    <div class="experience-item">
-      <h3>Instrument Worker - PT Dexin Steel Indonesia</h3>
-      <p><em>November 2022 - Sekarang</em></p>
-      <ul>
-        <li>Melakukan pemeliharaan dan perbaikan sistem electrical dan instrumentasi pada proses produksi smelter.</li>
-        <li>Bertanggung jawab pada sistem kontrol, troubleshooting, dan pengujian peralatan.</li>
-        <li>Mengawasi safety listrik dan prosedur K3 di area kerja.</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <h3>Internship - PT Dexin Steel Indonesia</h3>
-      <p><em>Februari 2021 - November 2022</em></p>
-      <ul>
-        <li>Mempelajari proses kerja smelter dan sistem kelistrikan serta instrumentasi.</li>
-        <li>Mendukung tim maintenance dalam pelaksanaan tugas harian.</li>
-      </ul>
-    </div>
-    <div class="experience-item">
-      <h3>Freelance Technician</h3>
-      <p><em>Agustus 2017 - Sekarang</em></p>
-      <ul>
-        <li>Memberikan jasa perbaikan dan instalasi peralatan listrik dan instrumentasi.</li>
-      </ul>
-    </div>
-  </section>
+  <h1>Marwan Putra Haji Husin</h1>
+  <p><strong>Prompt Engineer | Electrical Engineer | Instrument Engineer | Steel Making | Steel Smelting | Tech Enthusiast</strong></p>
+  <p>Morowali, Central Sulawesi, Indonesia</p>
 
-  <section id="education">
-    <h2>Pendidikan</h2>
-    <div class="education-item">
-      <h3>Diploma 3 - Teknik Elektro dan Instalasi</h3>
-      <p><em>Politeknik Industri Morowali, 2019 - 2022</em></p>
-    </div>
-    <div class="education-item">
-      <h3>S1 Ilmu Komputer (Sedang Berjalan)</h3>
-      <p><em>Binus University, 2023 - Sekarang</em></p>
-    </div>
-  </section>
+  <div class="section contact-info">
+    <h2>Contact</h2>
+    <p>📱 +62 822-3786-2408 (Mobile)</p>
+    <p>📧 <a href="mailto:marwanhusin338@gmail.com">marwanhusin338@gmail.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/marwanhusin" target="_blank">linkedin.com/in/marwanhusin</a> (LinkedIn)</p>
+    <p>🌐 <a href="https://marwanhusin.github.io/" target="_blank">marwanhusin.github.io</a> (Personal)</p>
+  </div>
 
-  <section id="skills">
-    <h2>Keahlian</h2>
+  <div class="section top-skills">
+    <h2>Top Skills</h2>
     <ul>
-      <li>Electrical Engineering & Instrumentation</li>
-      <li>Maintenance & Troubleshooting Smelter Equipment</li>
-      <li>PLC Programming (TIA Portal)</li>
-      <li>Arduino & Raspberry Pi Development</li>
-      <li>Microsoft Office, Visual Studio Code, MySQL</li>
-      <li>Bahasa Indonesia (Lancar), Bahasa Inggris (Menengah)</li>
+      <li>PHP</li>
+      <li>MySQL</li>
+      <li>C (Programming Language)</li>
     </ul>
-  </section>
+  </div>
 
-  <section id="contact">
-    <h2>Kontak</h2>
-    <p>Email: <a href="mailto:marwanhusin338@gmail.com" class="contact-link">marwanhusin338@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/marwanhusin/" target="_blank" class="contact-link">linkedin.com/in/marwanhusin</a></p>
-    <p>GitHub: <a href="https://github.com/marwanhusin" target="_blank" class="contact-link">github.com/marwanhusin</a></p>
-  </section>
+  <div class="section languages">
+    <h2>Languages</h2>
+    <ul>
+      <li>Indonesian (Native or Bilingual)</li>
+      <li>English (Limited Working)</li>
+      <li>Chinese (Elementary)</li>
+    </ul>
+  </div>
 
-  <footer>
-    <p>© 2025 Marwan Putra Haji Husin - All Rights Reserved</p>
-  </footer>
+  <div class="section certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Responsive Web Design</li>
+      <li>PLC Program Flow and Control Instructions</li>
+      <li>Safety Man</li>
+      <li>ISO 14001</li>
+      <li>Program Magang Industri</li>
+    </ul>
+  </div>
+
+  <div class="section honors">
+    <h2>Honors & Awards</h2>
+    <ul>
+      <li>Runner up Honda DBL East Nusa Tenggara Series 2015</li>
+      <li>Silver Medalist in Men's Basketball Competition "TPB Cup Basketball 2018"</li>
+      <li>Awardee of Scholarship for Associate's Degree Education at Morowali Metal Industry Polytechnic</li>
+    </ul>
+  </div>
+
+  <div class="section summary">
+    <h2>Summary</h2>
+    <p>
+      Hi, I’m Marwan Putra Haji Husin. I’m an Electrical and Instrumentation Engineer with hands-on experience in smelter processing and industrial automation. I graduated from the Metal Industry Polytechnic of Morowali, majoring in Electric and Installation Engineering, and have been working in the field ever since.
+      <br><br>
+      For almost 3 years, I’ve been part of PT Dexin Steel Indonesia at the Indonesia Morowali Industrial Park (IMIP). My work mostly involves maintaining and repairing electrical systems and instrumentation —especially during smelting, ladle handling, continuous casting, and slag recycling. I’ve also handled crane troubleshooting and supported various field operations in the steelmaking process.
+      <br><br>
+      Along the way, I’ve earned several certifications:
+      <ul>
+        <li>Class 2 Prime Mover Operator (Ministry of Manpower)</li>
+        <li>Industrial Automation Technician (BNSP)</li>
+        <li>Occupational Safety and Health Expert (Ministry of Manpower)</li>
+      </ul>
+      Right now, I’m also studying Computer Science online at BINUS to expand my tech and automation skills further.
+      <br><br>
+      I’m passionate about working in environments where engineering, technology, and safety come together. Always open to learning, improving, and growing.
+      <br><br>
+      Feel free to connect or drop me a message at <a href="mailto:marwanhusin338@gmail.com">marwanhusin338@gmail.com</a> — happy to collaborate and explore new opportunities!
+    </p>
+  </div>
+
+  <div class="section experience">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <h3>Electrical Engineer 电工 - PT. DEXIN STEEL INDONESIA</h3>
+      <div class="period">January 2024 - Present (1 year 5 months)</div>
+      <ul>
+        <li>Responsible for installation, maintenance, and repair of electrical systems in heavy equipment and production facilities within the smelter area.</li>
+        <li>Troubleshooting and technical analysis of electrical systems including control panels, electric motors, generators, and power distribution networks.</li>
+        <li>Repaired cranes and other electrical equipment during slag cleaning and production processes, minimizing downtime.</li>
+        <li>Managed projects to upgrade electrical systems, improving energy efficiency and smelter operation reliability.</li>
+        <li>Collaborated with teams for integration between electrical and instrumentation systems using PLC, SCADA, and DCS.</li>
+        <li>Ensured compliance with safety standards (K3) in all electrical work and maintenance.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Instrument Engineer 仪表工 - PT. DEXIN STEEL INDONESIA</h3>
+      <div class="period">February 2023 - Present (2 years 4 months)</div>
+      <ul>
+        <li>Maintained, calibrated, and troubleshot instrumentation systems within the smelter for accurate production data.</li>
+        <li>Conducted inspections and preventive maintenance on control systems, sensors, and measurement devices.</li>
+        <li>Led repair and recalibration of instruments to reduce operational delays and improve availability.</li>
+        <li>Collaborated with electrical and mechanical teams to integrate instrumentation with PLC, SCADA, and DCS.</li>
+        <li>Developed and implemented system upgrades and automation solutions.</li>
+        <li>Ensured K3 safety standards during instrumentation installation and maintenance.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Instrument Engineer 仪表工 - PT. DEXIN STEEL INDONESIA</h3>
+      <div class="period">November 2022 - February 2023 (4 months)</div>
+      <ul>
+        <li>Maintained, calibrated, and troubleshot instrumentation systems in the smelter for accurate production data.</li>
+        <li>Performed routine inspections and preventive maintenance.</li>
+        <li>Led repair and recalibration of critical instruments.</li>
+        <li>Collaborated with electrical and mechanical teams for integration with PLC, SCADA, and DCS.</li>
+        <li>Developed system upgrades and automation solutions.</li>
+        <li>Ensured K3 safety compliance during instrumentation activities.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Intern 实习生 - PT. DEXIN STEEL INDONESIA</h3>
+      <div class="period">February 2021 - October 2022 (1 year 9 months)</div>
+      <ul>
+        <li>Assisted in maintenance and calibration of instrumentation systems in the smelter plant.</li>
+        <li>Supported installation of PLC and SCADA-based control systems.</li>
+        <li>Participated in troubleshooting and repair projects to reduce downtime.</li>
+        <li>Monitored and analyzed data for system accuracy and efficiency.</li>
+        <li>Collaborated with senior technicians and engineers to improve automation control systems.</li>
+        <li>Ensured K3 safety standards throughout maintenance and repair.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Industrial Apprenticeship Program - PT INDONESIA MOROWALI INDUSTRIAL PARK (IMIP)</h3>
+      <div class="period">February 2021 - February 2022 (1 year 1 month)</div>
+      <ul>
+        <li>Intensive apprenticeship focused on instrumentation and electrical systems in industrial smelting.</li>
+        <li>Hands-on maintenance, calibration, and troubleshooting of instrumentation devices.</li>
+        <li>Assisted installation and configuration of PLC and SCADA systems.</li>
+        <li>Conducted routine inspections and preventive maintenance to ensure system reliability.</li>
+        <li>Learned to read P&ID diagrams and perform loop checks and equipment testing.</li>
+        <li>Strictly adhered to K3 health and safety regulations during all tasks.</li>
+        <li>Participated in workshops and on-the-job training for continuous learning.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>BINUS UNIVERSITY ONLINE LEARNING</strong> — Computer Science (2022)</li>
+      <li><strong>Politeknik Industri Logam Morowali</strong> — Associate's degree, Electric and Installation Engineering (2019 - 2022)</li>
+      <li><strong>Institut Teknologi Bandung (ITB)</strong> — Bioenergy and Chemurgy Engineering (2017 - 2019)</li>
+      <li><strong>SMA Negeri 2 Kota Kupang</strong> — Natural Sciences (2014 - 2017)</li>
+    </ul>
+  </div>
+
+</div>
 </body>
 </html>
