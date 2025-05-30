@@ -104,3 +104,8 @@ ul {
 .footer {
   text-align: center;
   padding:
+20px 0;
+background: #eaeaea;
+color: #666;
+font-size: 0.9rem;
+}
