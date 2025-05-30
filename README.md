@@ -1,17 +1,34 @@
-# 🌐 Marwan Husin - Personal Portfolio Website
+# Marwan Putra Haji Husin — Portfolio Web
 
-This is a responsive and minimalist portfolio website built using HTML and CSS. It showcases my professional background, skills, certifications, and achievements in the field of electrical and instrumentation engineering, with additional interests in automation and web development.
+Welcome to my personal portfolio website! 🚀
 
-## 🧑‍💼 About Me
+I’m **Marwan Putra Haji Husin**, an Electrical Engineer with hands-on experience in industrial smelter maintenance, instrumentation, and automation. I build clean, responsive, and modern web projects to showcase my skills, projects, and professional journey.
 
-Hi, I'm **Marwan Putra Haji Husin** — a passionate Electrical & Instrumentation Engineer working in the steelmaking industry. I have hands-on experience in smelter operations, automation systems, and safety compliance (K3). I'm also currently pursuing a degree in Computer Science at BINUS University.
+---
 
-Visit my live portfolio here:  
-👉 **[marwanhusin.github.io](https://marwanhusin.github.io)**
+## 🔥 Features
 
-## 📁 Project Structure
+- **Fully responsive design** for seamless experience on all devices  
+- Clean, minimalistic, and professional UI built with HTML5 & CSS3  
+- Smooth scrolling navigation with active link highlighting  
+- Contact form integrated with email support  
+- Highlighted sections for About, Skills, Experience, Projects & Contact  
+- Modern typography & color scheme for easy readability  
+- Optimized for performance and accessibility  
 
-```bash
-├── index.html        # Main HTML file
-├── style.css         # Custom CSS styling
-└── README.md         # Project description and documentation
+---
+
+## 🛠 Tech Stack
+
+- HTML5  
+- CSS3 (Custom Properties & Flexbox/Grid)  
+- Google Fonts & Icon Libraries (e.g. Unicons)  
+- Responsive & mobile-first design principles  
+
+---
+
+## 🚀 Getting Started
+
+1. Clone this repo  
+   ```bash
+   git clone https://github.com/bedimcode/portfolio-responsive-complete.git
