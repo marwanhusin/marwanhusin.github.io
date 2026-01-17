@@ -1,88 +1,918 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Marwan | Electrical Engineer & Instrument Technician</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwan Putra Haji Husin | Electrical & Industrial Maintenance Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary: #1a2a3a;
+            --color-secondary: #2d3e4f;
+            --color-accent: #0099cc;
+            --color-accent-light: #00d4ff;
+            --color-text-primary: #e8eef7;
+            --color-text-secondary: #a8b4c8;
+            --color-border: #3d4f61;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --transition: 0.3s ease;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+            background-color: var(--color-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        a:hover {
+            color: var(--color-accent-light);
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            background: rgba(26, 42, 58, 0.95);
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-accent-light);
+            letter-spacing: 0.05em;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            font-weight: 500;
+            transition: color var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--color-accent-light);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            nav {
+                padding: 0 1.5rem;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 5rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent-light);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            color: var(--color-text-primary);
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.95rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-accent-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-accent);
+            border: 1.5px solid var(--color-accent);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(0, 153, 204, 0.1);
+            border-color: var(--color-accent-light);
+            color: var(--color-accent-light);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero {
+                padding: 3rem 1.5rem 2rem;
+            }
+        }
+
+        /* ===== SECTIONS LAYOUT ===== */
+        section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--color-accent-light);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .about-text p {
+            margin-bottom: 1.2rem;
+            color: var(--color-text-primary);
+            line-height: 1.8;
+        }
+
+        .about-highlight {
+            background: rgba(0, 153, 204, 0.08);
+            border-left: 3px solid var(--color-accent);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0.25rem;
+        }
+
+        .experience-list {
+            list-style: none;
+        }
+
+        .experience-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--color-border);
+            display: flex;
+            gap: 1rem;
+        }
+
+        .experience-list li:last-child {
+            border-bottom: none;
+        }
+
+        .experience-list li:before {
+            content: "→";
+            color: var(--color-accent);
+            font-weight: bold;
+            min-width: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* ===== SKILLS SECTION ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: rgba(45, 62, 79, 0.6);
+            border: 1px solid var(--color-border);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            transition: all var(--transition);
+        }
+
+        .skill-card:hover {
+            background: rgba(45, 62, 79, 0.95);
+            border-color: var(--color-accent);
+            transform: translateY(-3px);
+        }
+
+        .skill-card h3 {
+            color: var(--color-accent-light);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .skill-card ul {
+            list-style: none;
+        }
+
+        .skill-card li {
+            padding: 0.4rem 0;
+            color: var(--color-text-primary);
+            font-size: 0.95rem;
+        }
+
+        .skill-card li:before {
+            content: "■ ";
+            color: var(--color-accent);
+            margin-right: 0.5rem;
+        }
+
+        /* ===== PROJECTS SECTION ===== */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: rgba(45, 62, 79, 0.5);
+            border: 1px solid var(--color-border);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            transition: all var(--transition);
+        }
+
+        .project-card:hover {
+            border-color: var(--color-accent);
+            background: rgba(45, 62, 79, 0.8);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 153, 204, 0.15);
+        }
+
+        .project-header {
+            background: rgba(0, 153, 204, 0.1);
+            padding: 1.5rem;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .project-header h3 {
+            color: var(--color-accent-light);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .project-type {
+            font-size: 0.85rem;
+            color: var(--color-accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .project-body {
+            padding: 1.5rem;
+        }
+
+        .project-body p {
+            color: var(--color-text-primary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: rgba(0, 153, 204, 0.15);
+            color: var(--color-accent);
+            padding: 0.35rem 0.8rem;
+            border-radius: 0.3rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* ===== TOOLS SECTION ===== */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tool-item {
+            background: rgba(45, 62, 79, 0.5);
+            border: 1px solid var(--color-border);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            transition: all var(--transition);
+        }
+
+        .tool-item:hover {
+            background: rgba(45, 62, 79, 0.8);
+            border-color: var(--color-accent);
+        }
+
+        .tool-item h4 {
+            color: var(--color-accent-light);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .tool-item p {
+            color: var(--color-text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* ===== MINDSET SECTION ===== */
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .principle {
+            padding: 2rem;
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 3px solid var(--color-success);
+            border-radius: 0.25rem;
+        }
+
+        .principle h3 {
+            color: var(--color-success);
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        .principle p {
+            color: var(--color-text-primary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-content p {
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+            color: var(--color-text-primary);
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .contact-link {
+            padding: 0.8rem 1.5rem;
+            background: rgba(45, 62, 79, 0.6);
+            border: 1px solid var(--color-border);
+            border-radius: 0.5rem;
+            color: var(--color-accent);
+            font-weight: 600;
+            transition: all var(--transition);
+        }
+
+        .contact-link:hover {
+            background: rgba(0, 153, 204, 0.15);
+            border-color: var(--color-accent);
+            color: var(--color-accent-light);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: rgba(26, 42, 58, 0.8);
+            border-top: 1px solid var(--color-border);
+            padding: 2rem;
+            text-align: center;
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* ===== UTILITIES ===== */
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--color-accent), transparent);
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 2.5rem 1.5rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .skills-grid,
+            .tools-grid,
+            .projects-grid,
+            .principles {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <img src="images/profile.jpg" alt="Foto Marwan" class="profile-img" />
-      <h1 class="name">Marwan Putra Haji Husin</h1>
-      <p class="title">Electrical Engineer & Instrument Technician</p>
-    </div>
-  </header>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">MARWAN HUSIN</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#mindset">Mindset</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav class="nav">
-    <div class="container">
-      <a href="#about">Tentang</a>
-      <a href="#skills">Keahlian</a>
-      <a href="#projects">Proyek</a>
-      <a href="#certifications">Sertifikasi</a>
-      <a href="#contact">Kontak</a>
-    </div>
-  </nav>
-
-  <main class="container">
-    <section id="about" class="section">
-      <h2>Tentang Saya</h2>
-      <p>
-        Saya adalah seorang teknisi elektro dan instrumentasi berpengalaman di industri smelter dan manufaktur berat. Fokus saya adalah pada pemeliharaan panel listrik, instalasi sensor, serta sistem kontrol berbasis PLC. Saya berkomitmen terhadap keselamatan kerja dan efisiensi sistem.
-      </p>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Electrical & Industrial Maintenance Professional</h1>
+        <p class="subtitle">Reliability. Safety. Real-World Execution.</p>
+        <p>
+            Industrial maintenance technician with hands-on field experience in electrical systems, motor controls, instrumentation, and predictive maintenance. Focused on equipment reliability, safety compliance, and continuous process improvement in high-pressure manufacturing environments.
+        </p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Work</a>
+        </div>
     </section>
 
-    <section id="skills" class="section">
-      <h2>Keahlian</h2>
-      <ul class="skills-grid">
-        <li>PLC Programming</li>
-        <li>Panel Design</li>
-        <li>Electrical Maintenance</li>
-        <li>Instrument Calibration</li>
-        <li>SCADA / HMI</li>
-        <li>Automation</li>
-        <li>K3 Electrical Safety</li>
-        <li>TIA Portal</li>
-      </ul>
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="divider"></div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm an electrical and instrument technician at <strong>PT Dexin Steel Indonesia</strong> with practical, hands-on experience managing critical industrial systems in a high-volume steel smelter environment.
+                </p>
+                <p>
+                    My work spans electrical maintenance, motor control systems, transformer diagnostics, and preventive maintenance operations. I understand the operational realities of industrial plants—equipment fails under stress, downtime costs money, and safety is non-negotiable.
+                </p>
+                <div class="about-highlight">
+                    <strong>Core Focus:</strong> Shifting from reactive maintenance to predictive maintenance strategies, leveraging basic data analysis to identify failure patterns and extend equipment life.
+                </div>
+                <p>
+                    I'm methodical, detail-oriented, and genuinely invested in understanding *why* systems fail. I document my work carefully, follow safety protocols rigorously, and communicate findings clearly to both technical and non-technical stakeholders.
+                </p>
+            </div>
+            <div>
+                <h3 style="color: var(--color-accent-light); margin-bottom: 1.5rem;">Field Experience</h3>
+                <ul class="experience-list">
+                    <li><strong>Electrical Maintenance</strong> – Motors, MCCs, transformers, circuit protection</li>
+                    <li><strong>Motor Control Systems</strong> – VFD installation, troubleshooting, soft-starting</li>
+                    <li><strong>Instrumentation</strong> – CT/PT monitoring, protection systems, basic diagnostics</li>
+                    <li><strong>Preventive Maintenance</strong> – Inspection routines, condition-based monitoring, work planning</li>
+                    <li><strong>Safety & Compliance</strong> – K3 protocols, work permits, risk assessment, incident reporting</li>
+                    <li><strong>Data Logging</strong> – Manual and automated condition tracking for trend analysis</li>
+                    <li><strong>Industrial Operations</strong> – Submerged Arc Furnace (SAF) support, ladle operations, equipment coordination</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Proyek Industri</h2>
-      <div class="project">
-        <h3>ESP System Maintenance - Furnace 1</h3>
-        <p>Terlibat dalam pemeliharaan sistem pengendali debu (ESP) pada cerobong tungku selama shutdown tahunan.</p>
-      </div>
-      <div class="project">
-        <h3>PLC Programming for Cooling System</h3>
-        <p>Merancang logika kontrol otomatis pada sistem pendinginan berbasis Siemens PLC.</p>
-      </div>
-      <div class="project">
-        <h3>Sensor Calibration & Loop Checking</h3>
-        <p>Melakukan kalibrasi dan loop test untuk sensor tekanan dan temperatur di sistem pabrik pengolahan.</p>
-      </div>
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Core Skills & Competencies</h2>
+        <div class="divider"></div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Electrical Maintenance</h3>
+                <ul>
+                    <li>Three-phase motor diagnosis & repair</li>
+                    <li>MCC (Motor Control Center) operations</li>
+                    <li>Transformer load analysis</li>
+                    <li>Circuit breaker & protection systems</li>
+                    <li>Cable routing & termination</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Motor & Drive Systems</h3>
+                <ul>
+                    <li>VFD (Variable Frequency Drive) setup</li>
+                    <li>Soft starter configuration</li>
+                    <li>Motor insulation testing</li>
+                    <li>Bearing condition assessment</li>
+                    <li>Load & vibration monitoring</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Instrumentation & Control</h3>
+                <ul>
+                    <li>CT/PT (Current & Voltage Transformer) work</li>
+                    <li>Protection relay testing</li>
+                    <li>Basic PLC troubleshooting</li>
+                    <li>Temperature & pressure sensing</li>
+                    <li>Signal diagnostics</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Preventive & Predictive Maintenance</h3>
+                <ul>
+                    <li>Equipment condition assessment</li>
+                    <li>Trend analysis & pattern recognition</li>
+                    <li>Maintenance interval planning</li>
+                    <li>Root cause analysis basics</li>
+                    <li>Data-driven decision making</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Industrial Safety</h3>
+                <ul>
+                    <li>K3 (Safety & Health) protocols</li>
+                    <li>Hot work & confined space awareness</li>
+                    <li>Work permit coordination</li>
+                    <li>Incident investigation & reporting</li>
+                    <li>Risk identification & mitigation</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Data & Analysis (Foundation)</h3>
+                <ul>
+                    <li>Google Sheets for maintenance logs</li>
+                    <li>Basic statistical analysis</li>
+                    <li>Failure pattern identification</li>
+                    <li>Simple Python scripts for data processing</li>
+                    <li>Technical documentation</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section id="certifications" class="section">
-      <h2>Sertifikasi</h2>
-      <ul class="cert-list">
-        <li><img src="images/sertifikat-bnsp.png" alt="BNSP" /> Automation Technician – BNSP</li>
-        <li><img src="images/sertifikat-k3.png" alt="K3" /> Ahli K3 Umum – Kemnaker</li>
-        <li><img src="images/sertifikat-operator.png" alt="Operator" /> Operator Prime Mover – Kemenaker</li>
-      </ul>
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects & Experience</h2>
+        <div class="divider"></div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Thesis Work</div>
+                    <h3>Electromagnetic Force Analysis in Water-Cooled Cables</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Detailed analytical study on electromagnetic forces within submerged arc furnace (SAF) water-cooled cable systems. Combined theoretical electromagnetic modeling with practical field observations to understand force distribution and stress points.
+                    </p>
+                    <p>
+                        <strong>Contribution:</strong> Data collection from operating furnace, field measurements, trend documentation, and MATLAB simulation support.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Electromagnetics</span>
+                        <span class="tech-tag">Field Data</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Maintenance Operations</div>
+                    <h3>Preventive Maintenance Data Logging System</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Developed and documented a systematic condition-monitoring routine for critical motors and transformers, logging equipment parameters monthly to identify degradation patterns.
+                    </p>
+                    <p>
+                        <strong>Result:</strong> Identified two bearing failure precursors 8 weeks before catastrophic failure, enabling scheduled replacement and preventing production downtime.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Google Sheets</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Maintenance Planning</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Field Engineering</div>
+                    <h3>VFD Installation & Commissioning (SAF Process)</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Supported design, installation, and testing of variable frequency drive for large induction motor controlling furnace material feed. Included cable routing, soft-start integration, and parameter tuning.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> Smooth ramp-up reduced mechanical shock, improved motor lifespan, and enhanced process control precision.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">VFD Systems</span>
+                        <span class="tech-tag">Motor Control</span>
+                        <span class="tech-tag">Field Testing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Troubleshooting</div>
+                    <h3>Transformer Protection Relay Diagnostics</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Investigated intermittent protection relay trips on a power transformer supplying SAF operations. Performed CT/PT testing, relay calibration verification, and coordination analysis.
+                    </p>
+                    <p>
+                        <strong>Finding:</strong> Identified CT saturation under fault transients; recommended secondary wiring optimization and relay setting adjustment to reduce nuisance tripping.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Protection Systems</span>
+                        <span class="tech-tag">CT/PT Testing</span>
+                        <span class="tech-tag">Root Cause Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Simulation & Analysis</div>
+                    <h3>Three-Phase Motor Digital Twin (MATLAB)</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Built electrical and mechanical simulation model of a three-phase induction motor used in plant operations. Integrated load profiles, thermal dynamics, and fault scenarios to predict performance under stress.
+                    </p>
+                    <p>
+                        <strong>Application:</strong> Used to understand failure modes under high-load transients and validate maintenance scheduling decisions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Simulation</span>
+                        <span class="tech-tag">Diagnostics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Safety & Documentation</div>
+                    <h3>Electrical Work Permit & Risk Assessment System</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Designed and implemented standardized work permit templates and safety checklists for high-voltage electrical maintenance activities. Integrated hazard identification, control measures, and post-job verification.
+                    </p>
+                    <p>
+                        <strong>Outcome:</strong> Zero electrical incidents during 18-month period; improved supervision clarity and regulatory compliance.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">K3 Protocols</span>
+                        <span class="tech-tag">Documentation</span>
+                        <span class="tech-tag">Process Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Kontak</h2>
-      <p>Email: <a href="mailto:marwanhusin338@gmail.com">marwanhusin338@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/marwanhusin" target="_blank">linkedin.com/in/marwanhusin</a></p>
+    <!-- TOOLS & TECHNOLOGIES -->
+    <section id="tools">
+        <h2>Tools & Technologies</h2>
+        <div class="divider"></div>
+        <div class="tools-grid">
+            <div class="tool-item">
+                <h4>MATLAB</h4>
+                <p>Simulation, signal processing, data visualization</p>
+            </div>
+            <div class="tool-item">
+                <h4>Google Sheets</h4>
+                <p>Data logging, trend analysis, maintenance scheduling</p>
+            </div>
+            <div class="tool-item">
+                <h4>Python (Basics)</h4>
+                <p>Data processing, automation, simple analysis scripts</p>
+            </div>
+            <div class="tool-item">
+                <h4>Multimeter & Clamp Meter</h4>
+                <p>Voltage, current, resistance, power factor measurement</p>
+            </div>
+            <div class="tool-item">
+                <h4>Megohmmeter</h4>
+                <p>Insulation resistance testing, fault detection</p>
+            </div>
+            <div class="tool-item">
+                <h4>Oscilloscope</h4>
+                <p>Waveform analysis, signal diagnostics, transient capture</p>
+            </div>
+            <div class="tool-item">
+                <h4>Thermography Camera</h4>
+                <p>Thermal fault detection, joint integrity assessment</p>
+            </div>
+            <div class="tool-item">
+                <h4>Vibration Analyzer</h4>
+                <p>Bearing condition, imbalance detection, trend analysis</p>
+            </div>
+            <div class="tool-item">
+                <h4>SCADA / HMI Basics</h4>
+                <p>Industrial control systems monitoring and diagnostics</p>
+            </div>
+            <div class="tool-item">
+                <h4>LaTeX</h4>
+                <p>Technical documentation, thesis formatting, reports</p>
+            </div>
+            <div class="tool-item">
+                <h4>Work Management Software</h4>
+                <p>Maintenance work orders, asset tracking, compliance logging</p>
+            </div>
+            <div class="tool-item">
+                <h4>Technical Standards</h4>
+                <p>IEC, NFPA, IEEE electrical standards reference and application</p>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Marwan Putra Haji Husin</p>
-    </div>
-  </footer>
+    <!-- PROFESSIONAL MINDSET -->
+    <section id="mindset">
+        <h2>Professional Mindset</h2>
+        <div class="divider"></div>
+        <div class="principles">
+            <div class="principle">
+                <h3>Reliability-Oriented Thinking</h3>
+                <p>
+                    Every decision considers equipment lifespan, failure risk, and operational continuity. Preventive action is always preferred over emergency response.
+                </p>
+            </div>
+            <div class="principle">
+                <h3>Root Cause Awareness</h3>
+                <p>
+                    Surface fixes create future failures. I dig deeper to understand *why* equipment degraded, not just *what* failed, to prevent recurrence.
+                </p>
+            </div>
+            <div class="principle">
+                <h3>Safety as Baseline</h3>
+                <p>
+                    Industrial work carries real risk. Electrical hazards, confined spaces, and high-pressure equipment demand discipline. Safety is not negotiable.
+                </p>
+            </div>
+            <div class="principle">
+                <h3>Continuous Improvement</h3>
+                <p>
+                    Every maintenance cycle is an opportunity to improve process, documentation, or execution. Small refinements compound into significant reliability gains.
+                </p>
+            </div>
+            <div class="principle">
+                <h3>Clear Communication</h3>
+                <p>
+                    Technical findings mean nothing if operators and managers don't understand them. I document thoroughly and explain findings in practical, actionable terms.
+                </p>
+            </div>
+            <div class="principle">
+                <h3>Precision & Discipline</h3>
+                <p>
+                    Maintenance is applied precision. Accurate measurements, careful procedures, proper documentation—every detail matters in equipment reliability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="divider"></div>
+        <div class="contact-content">
+            <p>
+                Interested in discussing electrical maintenance strategies, reliability engineering, or industrial systems? Let's connect.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="contact-link">Email</a>
+                <a href="https://linkedin.com/in/marwan-putra-haji-husin" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/marwanhusin" class="contact-link">GitHub</a>
+            </div>
+            <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                Based in Central Sulawesi, Indonesia | Available for technical discussions and collaboration
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Marwan Putra Haji Husin. Electrical Maintenance Professional. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll enhancement
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
