@@ -1,142 +1,1709 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background: #f4f6f8;
-  color: #333;
-}
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+            --shadow-card: 0 2px 4px rgba(0, 0, 0, 0.08);
+            
+            /* Transitions */
+            --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-normal: 300ms cubic-bezier(0.16, 1, 0.3, 1);
+            
+            /* Typography Sizing */
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 2rem;
+            --font-size-4xl: 2.5rem;
+            
+            /* Font Weights */
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            
+            /* Line Heights */
+            --line-height-tight: 1.2;
+            --line-height-normal: 1.6;
+            --line-height-relaxed: 1.75;
+            
+            /* Spacing */
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+        }
 
-.container {
-  width: 90%;
-  max-width: 960px;
-  margin: auto;
-}
+        /* Light mode override (for future use) */
+        @media (prefers-color-scheme: light) {
+            :root {
+                --color-primary: #f8f9fa;
+                --color-text-primary: #0f1419;
+                --color-text-secondary: #5a6b7d;
+                --color-border: #e5eaef;
+            }
+        }
 
-.header {
-  background: #1e293b;
-  color: #fff;
-  padding: 40px 0;
-  text-align: center;
-}
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
 
-.profile-img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
-  margin-bottom: 15px;
-}
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            background-color: var(--color-navy);
+            color: var(--color-light-text);
+            line-height: var(--line-height-normal);
+            overflow-x: hidden;
+            letter-spacing: 0.3px;
+        }
 
-.name {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: var(--font-weight-bold);
+            letter-spacing: -0.5px;
+            line-height: var(--line-height-tight);
+            color: var(--color-light-text);
+        }
 
-.title {
-  font-size: 1.1rem;
-  color: #cbd5e1;
-}
+        h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+        }
 
-.nav {
-  background: #334155;
-  padding: 10px 0;
-  text-align: center;
-}
+        h2 {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-lg);
+        }
 
-.nav a {
-  color: #e2e8f0;
-  margin: 0 12px;
-  text-decoration: none;
-  font-weight: 500;
-}
+        h3 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+        }
 
-.nav a:hover {
-  color: #38bdf8;
-}
+        h4 {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+            margin-bottom: var(--space-sm);
+        }
 
-.section {
-  margin-top: 50px;
-}
+        p {
+            font-size: var(--font-size-base);
+            margin-bottom: var(--space-lg);
+            color: var(--color-light-text);
+            line-height: var(--line-height-relaxed);
+        }
 
-.section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #0ea5e9;
-  padding-bottom: 6px;
-  color: #0f172a;
-}
+        strong {
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-light-text);
+        }
 
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 10px;
-}
+        a {
+            color: var(--color-accent-blue);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+            position: relative;
+        }
 
-.skills-grid li {
-  background: #e0f2fe;
-  padding: 10px 16px;
-  border-radius: 8px;
-  font-weight: 600;
-  color: #0369a1;
-}
+        a:hover {
+            color: var(--color-accent-blue-light);
+        }
 
-.project {
-  background: #fff;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  border-left: 4px solid #0ea5e9;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
+        a:focus-visible {
+            outline: 2px solid var(--color-accent-blue);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
 
-.project h3 {
-  margin-bottom: 8px;
-  color: #1e40af;
-}
+        /* ===== LAYOUT CONTAINER ===== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
 
-.cert-list {
-  list-style: none;
-  padding: 0;
-}
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 var(--space-lg);
+            }
+        }
 
-.cert-list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  gap: 12px;
-  background: #f1f5f9;
-  padding: 10px;
-  border-radius: 6px;
-}
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 var(--space-md);
+            }
+        }
 
-.cert-list img {
-  width: 48px;
-  height: auto;
-  border-radius: 4px;
-}
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            background: rgba(15, 20, 25, 0.98);
+            border-bottom: 1px solid var(--color-charcoal);
+            padding: var(--space-lg) 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+        }
 
-#contact a {
-  color: #0284c7;
-  text-decoration: none;
-}
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 var(--space-xl);
+        }
 
-#contact a:hover {
-  text-decoration: underline;
-}
+        .logo {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-accent-blue-light);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
 
-.footer {
-  background: #1e293b;
-  color: #cbd5e1;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 50px;
-  font-size: 0.9rem;
-}
+        nav ul {
+            display: flex;
+            gap: var(--space-2xl);
+            list-style: none;
+        }
+
+        nav a {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+            font-weight: var(--font-weight-medium);
+            transition: color var(--transition-fast);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        nav a:hover {
+            color: var(--color-accent-blue-light);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 0 var(--space-lg);
+            }
+
+            nav ul {
+                gap: var(--space-lg);
+                font-size: 0.85rem;
+            }
+
+            .logo {
+                font-size: var(--font-size-lg);
+            }
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: var(--space-3xl) var(--space-xl) var(--space-2xl);
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: var(--font-size-4xl);
+            margin-bottom: var(--space-sm);
+            color: var(--color-accent-blue-light);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subtitle {
+            font-size: var(--font-size-xl);
+            color: var(--color-accent-orange);
+            margin-bottom: var(--space-lg);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hero p {
+            font-size: var(--font-size-base);
+            max-width: 750px;
+            margin: 0 auto var(--space-2xl);
+            color: var(--color-light-text);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--space-lg);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: var(--space-md) var(--space-xl);
+            font-size: var(--font-size-sm);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: var(--font-weight-semibold);
+            transition: all var(--transition-normal);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-primary {
+            background-color: var(--color-accent-blue);
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-accent-blue-light);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-accent-blue);
+            border: 1.5px solid var(--color-accent-blue);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(0, 136, 204, 0.08);
+            border-color: var(--color-accent-blue-light);
+            color: var(--color-accent-blue-light);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: var(--font-size-3xl);
+            }
+
+            .hero .subtitle {
+                font-size: var(--font-size-lg);
+            }
+
+            .hero {
+                padding: var(--space-2xl) var(--space-lg) var(--space-xl);
+            }
+
+            .hero-buttons {
+                gap: var(--space-md);
+            }
+
+            .btn {
+                padding: var(--space-sm) var(--space-lg);
+                font-size: var(--font-size-xs);
+            }
+        }
+
+        /* ===== SECTIONS LAYOUT ===== */
+        section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: var(--space-3xl) var(--space-xl);
+            border-bottom: 1px solid var(--color-charcoal);
+        }
+
+        section h2 {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--space-xl);
+            color: var(--color-accent-blue-light);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* ===== DIVIDER ===== */
+        .divider {
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(to right, var(--color-accent-blue), transparent);
+            margin-bottom: var(--space-2xl);
+            margin-left: 0;
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+            align-items: start;
+        }
+
+        .about-text p {
+            margin-bottom: var(--space-lg);
+            color: var(--color-light-text);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .about-highlight {
+            background: rgba(0, 136, 204, 0.06);
+            border-left: 3px solid var(--color-accent-blue);
+            padding: var(--space-lg);
+            margin: var(--space-xl) 0;
+            border-radius: 2px;
+            font-size: var(--font-size-sm);
+        }
+
+        .about-highlight strong {
+            color: var(--color-accent-blue-light);
+        }
+
+        .experience-list {
+            list-style: none;
+        }
+
+        .experience-list li {
+            padding: var(--space-md) 0;
+            border-bottom: 1px solid var(--color-charcoal);
+            display: flex;
+            gap: var(--space-md);
+            font-size: var(--font-size-sm);
+        }
+
+        .experience-list li:last-child {
+            border-bottom: none;
+        }
+
+        .experience-list li:before {
+            content: "→";
+            color: var(--color-accent-blue);
+            font-weight: bold;
+            min-width: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .experience-list strong {
+            color: var(--color-accent-blue-light);
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: var(--space-xl);
+            }
+
+            .about-content > div > h3 {
+                font-size: var(--font-size-lg);
+                margin-bottom: var(--space-lg);
+            }
+        }
+
+        /* ===== SKILLS SECTION ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+        }
+
+        .skill-card {
+            background: rgba(45, 59, 79, 0.4);
+            border: 1px solid var(--color-charcoal);
+            padding: var(--space-xl);
+            border-radius: 4px;
+            transition: all var(--transition-normal);
+            box-shadow: var(--shadow-card);
+        }
+
+        .skill-card:hover {
+            background: rgba(45, 59, 79, 0.65);
+            border-color: var(--color-accent-blue);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .skill-card h3 {
+            color: var(--color-accent-blue-light);
+            margin-bottom: var(--space-md);
+            font-size: var(--font-size-lg);
+        }
+
+        .skill-card ul {
+            list-style: none;
+        }
+
+        .skill-card li {
+            padding: var(--space-sm) 0;
+            color: var(--color-light-text);
+            font-size: var(--font-size-sm);
+            line-height: var(--line-height-normal);
+        }
+
+        .skill-card li:before {
+            content: "■ ";
+            color: var(--color-accent-blue);
+            margin-right: var(--space-sm);
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+        }
+
+        /* ===== PROJECTS SECTION ===== */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-xl);
+        }
+
+        .project-card {
+            background: rgba(45, 59, 79, 0.35);
+            border: 1px solid var(--color-charcoal);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all var(--transition-normal);
+            box-shadow: var(--shadow-card);
+        }
+
+        .project-card:hover {
+            border-color: var(--color-accent-blue);
+            background: rgba(45, 59, 79, 0.6);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .project-header {
+            background: rgba(0, 136, 204, 0.08);
+            padding: var(--space-lg);
+            border-bottom: 2px solid var(--color-charcoal);
+        }
+
+        .project-header h3 {
+            color: var(--color-accent-blue-light);
+            margin-bottom: var(--space-sm);
+            font-size: var(--font-size-lg);
+        }
+
+        .project-type {
+            font-size: var(--font-size-xs);
+            color: var(--color-accent-blue);
+            font-weight: var(--font-weight-semibold);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .project-body {
+            padding: var(--space-lg);
+        }
+
+        .project-body p {
+            color: var(--color-light-text);
+            margin-bottom: var(--space-md);
+            font-size: var(--font-size-sm);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .project-body p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin-top: var(--space-lg);
+        }
+
+        .tech-tag {
+            background: rgba(0, 136, 204, 0.12);
+            color: var(--color-accent-blue);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: 2px;
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-medium);
+            border: 1px solid rgba(0, 136, 204, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+        }
+
+        /* ===== TOOLS SECTION ===== */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .tool-item {
+            background: rgba(45, 59, 79, 0.4);
+            border: 1px solid var(--color-charcoal);
+            padding: var(--space-lg);
+            border-radius: 4px;
+            text-align: center;
+            transition: all var(--transition-normal);
+            box-shadow: var(--shadow-card);
+        }
+
+        .tool-item:hover {
+            background: rgba(45, 59, 79, 0.65);
+            border-color: var(--color-accent-blue);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .tool-item h4 {
+            color: var(--color-accent-blue-light);
+            margin-bottom: var(--space-sm);
+            font-size: var(--font-size-base);
+        }
+
+        .tool-item p {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-xs);
+            line-height: var(--line-height-normal);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: var(--space-md);
+            }
+        }
+
+        /* ===== MINDSET SECTION ===== */
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-xl);
+        }
+
+        .principle {
+            padding: var(--space-lg);
+            background: rgba(16, 185, 129, 0.04);
+            border-left: 3px solid var(--color-accent-green);
+            border-radius: 2px;
+            box-shadow: var(--shadow-card);
+            transition: all var(--transition-normal);
+        }
+
+        .principle:hover {
+            background: rgba(16, 185, 129, 0.08);
+            border-left-color: var(--color-accent-orange);
+            transform: translateY(-1px);
+        }
+
+        .principle h3 {
+            color: var(--color-accent-green);
+            margin-bottom: var(--space-md);
+            font-size: var(--font-size-base);
+        }
+
+        .principle p {
+            color: var(--color-light-text);
+            font-size: var(--font-size-sm);
+            line-height: var(--line-height-relaxed);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .principles {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-content {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .contact-content p {
+            margin-bottom: var(--space-lg);
+            font-size: var(--font-size-base);
+            color: var(--color-light-text);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .contact-links {
+            display: flex;
+            gap: var(--space-lg);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: var(--space-2xl);
+        }
+
+        .contact-link {
+            padding: var(--space-md) var(--space-xl);
+            background: rgba(45, 59, 79, 0.5);
+            border: 1.5px solid var(--color-charcoal);
+            border-radius: 4px;
+            color: var(--color-accent-blue);
+            font-weight: var(--font-weight-semibold);
+            font-size: var(--font-size-sm);
+            transition: all var(--transition-normal);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .contact-link:hover {
+            background: rgba(0, 136, 204, 0.12);
+            border-color: var(--color-accent-blue);
+            color: var(--color-accent-blue-light);
+            transform: translateY(-1px);
+        }
+
+        .contact-content > p:last-child {
+            color: var(--color-text-muted);
+            font-size: var(--font-size-xs);
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .contact-links {
+                gap: var(--space-md);
+            }
+
+            .contact-link {
+                padding: var(--space-sm) var(--space-lg);
+                font-size: var(--font-size-xs);
+            }
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: rgba(15, 20, 25, 0.95);
+            border-top: 1px solid var(--color-charcoal);
+            padding: var(--space-xl) var(--space-lg);
+            text-align: center;
+            color: var(--color-text-muted);
+            font-size: var(--font-size-xs);
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        /* ===== UTILITIES ===== */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* ===== RESPONSIVE UTILITIES ===== */
+        @media (max-width: 768px) {
+            section {
+                padding: var(--space-2xl) var(--space-lg);
+            }
+
+            section h2 {
+                font-size: var(--font-size-2xl);
+                margin-bottom: var(--space-lg);
+            }
+
+            .divider {
+                margin-bottom: var(--space-xl);
+            }
+
+            h1 {
+                font-size: var(--font-size-3xl);
+            }
+
+            h2 {
+                font-size: var(--font-size-2xl);
+            }
+
+            h3 {
+                font-size: var(--font-size-lg);
+            }
+
+            p {
+                font-size: var(--font-size-sm);
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 15px;
+            }
+
+            section {
+                padding: var(--space-xl) var(--space-md);
+            }
+
+            section h2 {
+                font-size: var(--font-size-2xl);
+            }
+
+            h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .hero h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .hero .subtitle {
+                font-size: var(--font-size-base);
+            }
+
+            nav ul {
+                gap: var(--space-lg);
+            }
+
+            nav a {
+                font-size: var(--font-size-xs);
+            }
+        }
+
+        /* ===== ACCESSIBILITY ===== */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (prefers-contrast: more) {
+            .skill-card,
+            .project-card,
+            .tool-item {
+                border: 1.5px solid var(--color-accent-blue);
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    </style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+            background-color: var(--color-primary);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: var(--color-accent);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        a:hover {
+            color: var(--color-accent-light);
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            background: rgba(26, 42, 58, 0.95);
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-accent-light);
+            letter-spacing: 0.05em;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            color: var(--color-text-secondary);
+            font-weight: 500;
+            transition: color var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--color-accent-light);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            nav {
+                padding: 0 1.5rem;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 5rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent-light);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            color: var(--color-text-primary);
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.95rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-accent-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-accent);
+            border: 1.5px solid var(--color-accent);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(0, 153, 204, 0.1);
+            border-color: var(--color-accent-light);
+            color: var(--color-accent-light);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero {
+                padding: 3rem 1.5rem 2rem;
+            }
+        }
+
+        /* ===== SECTIONS LAYOUT ===== */
+        section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--color-accent-light);
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .about-text p {
+            margin-bottom: 1.2rem;
+            color: var(--color-text-primary);
+            line-height: 1.8;
+        }
+
+        .about-highlight {
+            background: rgba(0, 153, 204, 0.08);
+            border-left: 3px solid var(--color-accent);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0.25rem;
+        }
+
+        .experience-list {
+            list-style: none;
+        }
+
+        .experience-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--color-border);
+            display: flex;
+            gap: 1rem;
+        }
+
+        .experience-list li:last-child {
+            border-bottom: none;
+        }
+
+        .experience-list li:before {
+            content: "→";
+            color: var(--color-accent);
+            font-weight: bold;
+            min-width: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* ===== SKILLS SECTION ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: rgba(45, 62, 79, 0.6);
+            border: 1px solid var(--color-border);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            transition: all var(--transition);
+        }
+
+        .skill-card:hover {
+            background: rgba(45, 62, 79, 0.95);
+            border-color: var(--color-accent);
+            transform: translateY(-3px);
+        }
+
+        .skill-card h3 {
+            color: var(--color-accent-light);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .skill-card ul {
+            list-style: none;
+        }
+
+        .skill-card li {
+            padding: 0.4rem 0;
+            color: var(--color-text-primary);
+            font-size: 0.95rem;
+        }
+
+        .skill-card li:before {
+            content: "■ ";
+            color: var(--color-accent);
+            margin-right: 0.5rem;
+        }
+
+        /* ===== PROJECTS SECTION ===== */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: rgba(45, 62, 79, 0.5);
+            border: 1px solid var(--color-border);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            transition: all var(--transition);
+        }
+
+        .project-card:hover {
+            border-color: var(--color-accent);
+            background: rgba(45, 62, 79, 0.8);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 153, 204, 0.15);
+        }
+
+        .project-header {
+            background: rgba(0, 153, 204, 0.1);
+            padding: 1.5rem;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .project-header h3 {
+            color: var(--color-accent-light);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .project-type {
+            font-size: 0.85rem;
+            color: var(--color-accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .project-body {
+            padding: 1.5rem;
+        }
+
+        .project-body p {
+            color: var(--color-text-primary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: rgba(0, 153, 204, 0.15);
+            color: var(--color-accent);
+            padding: 0.35rem 0.8rem;
+            border-radius: 0.3rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* ===== TOOLS SECTION ===== */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tool-item {
+            background: rgba(45, 62, 79, 0.5);
+            border: 1px solid var(--color-border);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            transition: all var(--transition);
+        }
+
+        .tool-item:hover {
+            background: rgba(45, 62, 79, 0.8);
+            border-color: var(--color-accent);
+        }
+
+        .tool-item h4 {
+            color: var(--color-accent-light);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .tool-item p {
+            color: var(--color-text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* ===== MINDSET SECTION ===== */
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .principle {
+            padding: 2rem;
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 3px solid var(--color-success);
+            border-radius: 0.25rem;
+        }
+
+        .principle h3 {
+            color: var(--color-success);
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        .principle p {
+            color: var(--color-text-primary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-content p {
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+            color: var(--color-text-primary);
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .contact-link {
+            padding: 0.8rem 1.5rem;
+            background: rgba(45, 62, 79, 0.6);
+            border: 1px solid var(--color-border);
+            border-radius: 0.5rem;
+            color: var(--color-accent);
+            font-weight: 600;
+            transition: all var(--transition);
+        }
+
+        .contact-link:hover {
+            background: rgba(0, 153, 204, 0.15);
+            border-color: var(--color-accent);
+            color: var(--color-accent-light);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: rgba(26, 42, 58, 0.8);
+            border-top: 1px solid var(--color-border);
+            padding: 2rem;
+            text-align: center;
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* ===== UTILITIES ===== */
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, var(--color-accent), transparent);
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 2.5rem 1.5rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .skills-grid,
+            .tools-grid,
+            .projects-grid,
+            .principles {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">MARWAN HUSIN</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#mindset">Mindset</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Electrical & Industrial Maintenance Professional</h1>
+        <p class="subtitle">Reliability. Safety. Real-World Execution.</p>
+        <p>
+            Industrial maintenance technician with hands-on field experience in electrical systems, motor controls, instrumentation, and predictive maintenance. Focused on equipment reliability, safety compliance, and continuous process improvement in high-pressure manufacturing environments.
+        </p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Work</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="divider"></div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm an electrical and instrument technician at <strong>PT Dexin Steel Indonesia</strong> with practical, hands-on experience managing critical industrial systems in a high-volume steel smelter environment.
+                </p>
+                <p>
+                    My work spans electrical maintenance, motor control systems, transformer diagnostics, and preventive maintenance operations. I understand the operational realities of industrial plants—equipment fails under stress, downtime costs money, and safety is non-negotiable.
+                </p>
+                <div class="about-highlight">
+                    <strong>Core Focus:</strong> Shifting from reactive maintenance to predictive maintenance strategies, leveraging basic data analysis to identify failure patterns and extend equipment life.
+                </div>
+                <p>
+                    I'm methodical, detail-oriented, and genuinely invested in understanding *why* systems fail. I document my work carefully, follow safety protocols rigorously, and communicate findings clearly to both technical and non-technical stakeholders.
+                </p>
+            </div>
+            <div>
+                <h3 style="color: var(--color-accent-light); margin-bottom: 1.5rem;">Field Experience</h3>
+                <ul class="experience-list">
+                    <li><strong>Electrical Maintenance</strong> – Motors, MCCs, transformers, circuit protection</li>
+                    <li><strong>Motor Control Systems</strong> – VFD installation, troubleshooting, soft-starting</li>
+                    <li><strong>Instrumentation</strong> – CT/PT monitoring, protection systems, basic diagnostics</li>
+                    <li><strong>Preventive Maintenance</strong> – Inspection routines, condition-based monitoring, work planning</li>
+                    <li><strong>Safety & Compliance</strong> – K3 protocols, work permits, risk assessment, incident reporting</li>
+                    <li><strong>Data Logging</strong> – Manual and automated condition tracking for trend analysis</li>
+                    <li><strong>Industrial Operations</strong> – Submerged Arc Furnace (SAF) support, ladle operations, equipment coordination</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Core Skills & Competencies</h2>
+        <div class="divider"></div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Electrical Maintenance</h3>
+                <ul>
+                    <li>Three-phase motor diagnosis & repair</li>
+                    <li>MCC (Motor Control Center) operations</li>
+                    <li>Transformer load analysis</li>
+                    <li>Circuit breaker & protection systems</li>
+                    <li>Cable routing & termination</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Motor & Drive Systems</h3>
+                <ul>
+                    <li>VFD (Variable Frequency Drive) setup</li>
+                    <li>Soft starter configuration</li>
+                    <li>Motor insulation testing</li>
+                    <li>Bearing condition assessment</li>
+                    <li>Load & vibration monitoring</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Instrumentation & Control</h3>
+                <ul>
+                    <li>CT/PT (Current & Voltage Transformer) work</li>
+                    <li>Protection relay testing</li>
+                    <li>Basic PLC troubleshooting</li>
+                    <li>Temperature & pressure sensing</li>
+                    <li>Signal diagnostics</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Preventive & Predictive Maintenance</h3>
+                <ul>
+                    <li>Equipment condition assessment</li>
+                    <li>Trend analysis & pattern recognition</li>
+                    <li>Maintenance interval planning</li>
+                    <li>Root cause analysis basics</li>
+                    <li>Data-driven decision making</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Industrial Safety</h3>
+                <ul>
+                    <li>K3 (Safety & Health) protocols</li>
+                    <li>Hot work & confined space awareness</li>
+                    <li>Work permit coordination</li>
+                    <li>Incident investigation & reporting</li>
+                    <li>Risk identification & mitigation</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Data & Analysis (Foundation)</h3>
+                <ul>
+                    <li>Google Sheets for maintenance logs</li>
+                    <li>Basic statistical analysis</li>
+                    <li>Failure pattern identification</li>
+                    <li>Simple Python scripts for data processing</li>
+                    <li>Technical documentation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects & Experience</h2>
+        <div class="divider"></div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Thesis Work</div>
+                    <h3>Electromagnetic Force Analysis in Water-Cooled Cables</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Detailed analytical study on electromagnetic forces within submerged arc furnace (SAF) water-cooled cable systems. Combined theoretical electromagnetic modeling with practical field observations to understand force distribution and stress points.
+                    </p>
+                    <p>
+                        <strong>Contribution:</strong> Data collection from operating furnace, field measurements, trend documentation, and MATLAB simulation support.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Electromagnetics</span>
+                        <span class="tech-tag">Field Data</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Maintenance Operations</div>
+                    <h3>Preventive Maintenance Data Logging System</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Developed and documented a systematic condition-monitoring routine for critical motors and transformers, logging equipment parameters monthly to identify degradation patterns.
+                    </p>
+                    <p>
+                        <strong>Result:</strong> Identified two bearing failure precursors 8 weeks before catastrophic failure, enabling scheduled replacement and preventing production downtime.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Google Sheets</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Maintenance Planning</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Field Engineering</div>
+                    <h3>VFD Installation & Commissioning (SAF Process)</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Supported design, installation, and testing of variable frequency drive for large induction motor controlling furnace material feed. Included cable routing, soft-start integration, and parameter tuning.
+                    </p>
+                    <p>
+                        <strong>Impact:</strong> Smooth ramp-up reduced mechanical shock, improved motor lifespan, and enhanced process control precision.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">VFD Systems</span>
+                        <span class="tech-tag">Motor Control</span>
+                        <span class="tech-tag">Field Testing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Troubleshooting</div>
+                    <h3>Transformer Protection Relay Diagnostics</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Investigated intermittent protection relay trips on a power transformer supplying SAF operations. Performed CT/PT testing, relay calibration verification, and coordination analysis.
+                    </p>
+                    <p>
+                        <strong>Finding:</strong> Identified CT saturation under fault transients; recommended secondary wiring optimization and relay setting adjustment to reduce nuisance tripping.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Protection Systems</span>
+                        <span class="tech-tag">CT/PT Testing</span>
+                        <span class="tech-tag">Root Cause Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Simulation & Analysis</div>
+                    <h3>Three-Phase Motor Digital Twin (MATLAB)</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Built electrical and mechanical simulation model of a three-phase induction motor used in plant operations. Integrated load profiles, thermal dynamics, and fault scenarios to predict performance under stress.
+                    </p>
+                    <p>
+                        <strong>Application:</strong> Used to understand failure modes under high-load transients and validate maintenance scheduling decisions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MATLAB</span>
+                        <span class="tech-tag">Simulation</span>
+                        <span class="tech-tag">Diagnostics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-type">Safety & Documentation</div>
+                    <h3>Electrical Work Permit & Risk Assessment System</h3>
+                </div>
+                <div class="project-body">
+                    <p>
+                        Designed and implemented standardized work permit templates and safety checklists for high-voltage electrical maintenance activities. Integrated hazard identification, control measures, and post-job verification.
+                    </p>
+                    <p>
+                        <strong>Outcome:</strong> Zero electrical incidents during 18-month period; improved supervision clarity and regulatory compliance.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">K3 Protocols</span>
+                        <span class="tech-tag">Documentation</span>
+                        <span class="tech-tag">Process Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS & TECHNOLOGIES -->
+    <section id="tools">
+        <h2>Tools & Technologies</h2>
+        <div class="divider"></div>
+        <div class="tools-grid">
+            <div class="tool-item">
+                <h4>MATLAB</h4>
+                <p>Simulation, signal processing, data visualization</p>
+            </div>
+            <div class="tool-item">
+                <h4>Google Sheets</h4>
+                <p>Data logging, trend analysis, maintenance scheduling</p>
+            </div>
+            <div class="tool-item">
+                <h4>Python (Basics)</h4>
+                <p>Data processing, automation, simple analysis scripts</p>
+            </div>
+            <div class="tool-item">
+                <h4>Multimeter & Clamp Meter</h4>
+                <p>Voltage, current, resistance, power factor measurement</p>
+            </div>
+            <div class="tool-item">
+                <h4>Megohmmeter</h4>
+                <p>Insulation resistance testing, fault detection</p>
+            </div>
+            <div class="tool-item">
+                <h4>Oscilloscope</h4>
+                <p>Waveform analysis, signal diagnostics, transient capture</p>
+            </div>
+            <div class="tool-item">
+                <h4>Thermography Camera</h4>
+                <p>Thermal fault detection, joint integrity assessment</p>
+            </div>
+            <div class="tool-item">
+                <h4>Vibration Analyzer</h4>
+                <p>Bearing condition, imbalance detection, trend analysis</p>
+            </div>
+            <div class="tool-item">
+                <h4>SCADA / HMI Basics</h4>
+                <p>Industrial control systems monitoring and diagnostics</p>
+            </div>
+            <div class="tool-item">
+                <h4>LaTeX</h4>
+                <p>Technical documentation, thesis formatting, reports</p>
+            </div>
+            <div class="tool-item">
+                <h4>Work Management Software</h4>
+                <p>Maintenance work orders, asset tracking, compliance logging</p>
+            </div>
+            <div class="tool-item">
+                <h4>Technical Standards</h4>
+                <p>IEC, NFPA, IEEE electrical standards reference and application</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL MINDSET -->
+    <section id="mindset">
+        <h2>Professional Mindset</h2>
+        <div class="divider"></div>
+        <div class="principles">
+            <div class="principle">
+                <h3>Reliability-Oriented Thinking</h3>
+                <p>
+                    Every decision considers equipment lifespan, failure risk, and operational continuity. Preventive action is always preferred over emergency response.
+                </p>
+            </div>
+            <div class="principle">
+                <h3>Root Cause Awareness</h3>
+                <p>
+                    Surface fixes create future failures. I dig deeper to understand *why* equipment degraded, not just *what* failed, to prevent recurrence.
+                </p>
+            </div>
+            <div class="principle">
+                <h3>Safety as Baseline</h3>
+                <p>
+                    Industrial work carries real risk. Electrical hazards, confined spaces, and high-pressure equipment demand discipline. Safety is not negotiable.
+                </p>
+            </div>
+            <div class="principle">
+                <h3>Continuous Improvement</h3>
+                <p>
+                    Every maintenance cycle is an opportunity to improve process, documentation, or execution. Small refinements compound into significant reliability gains.
+                </p>
+            </div>
+            <div class="principle">
+                <h3>Clear Communication</h3>
+                <p>
+                    Technical findings mean nothing if operators and managers don't understand them. I document thoroughly and explain findings in practical, actionable terms.
+                </p>
+            </div>
+            <div class="principle">
+                <h3>Precision & Discipline</h3>
+                <p>
+                    Maintenance is applied precision. Accurate measurements, careful procedures, proper documentation—every detail matters in equipment reliability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="divider"></div>
+        <div class="contact-content">
+            <p>
+                Interested in discussing electrical maintenance strategies, reliability engineering, or industrial systems? Let's connect.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="contact-link">Email</a>
+                <a href="https://linkedin.com/in/marwan-putra-haji-husin" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/marwanhusin" class="contact-link">GitHub</a>
+            </div>
+            <p style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                Based in Central Sulawesi, Indonesia | Available for technical discussions and collaboration
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Marwan Putra Haji Husin. Electrical Maintenance Professional. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll enhancement
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
