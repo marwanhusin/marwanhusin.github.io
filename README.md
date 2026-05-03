@@ -1,215 +1,250 @@
 # Marwan Putra Haji Husin
-## Electrical & Industrial Maintenance Professional
+## Electrical & Instrument Engineer
 
-> **Reliability. Safety. Real-World Execution.**
+> Industrial Maintenance • Motor Control • Smelter Operations
 
 ---
 
 ## 📋 Overview
 
-Professional portfolio showcasing **hands-on field expertise** in industrial electrical maintenance, predictive maintenance strategies, and equipment reliability engineering within heavy manufacturing environments (steel smelters, high-pressure industrial plants).
+Professional portfolio focused on industrial electrical maintenance, instrumentation support, motor control systems, and engineering projects related to steel smelter operations and industrial environments.
 
-This repository documents:
-- ✓ Real field experience (PT Dexin Steel Indonesia, DSI-SS Department)
-- ✓ Technical project outcomes with measurable results
-- ✓ Maintenance methodologies developed through operational practice
-- ✓ Safety-first engineering mindset
-
-**Target Audience:** Engineering supervisors, maintenance managers, technical recruiters, reliability engineers evaluating industrial maintenance professionals.
+This repository showcases:
+- Practical industrial field experience
+- Electrical and instrumentation projects
+- Maintenance documentation and technical analysis
+- Industrial troubleshooting and engineering simulations
+- Continuous learning in maintenance and reliability engineering
 
 ---
 
 ## 🎯 Core Competencies
 
-| Category | Expertise |
-|----------|-----------|
-| **Electrical Maintenance** | Three-phase motor systems • MCC operations • Transformer protection • Circuit breaker diagnostics |
-| **Motor & Drive Systems** | VFD commissioning • Soft-start configuration • Bearing condition assessment • Load monitoring |
-| **Instrumentation** | CT/PT testing • Protection relay diagnostics • PLC troubleshooting • Signal analysis |
-| **Predictive Maintenance** | Condition monitoring • Trend analysis • Failure pattern recognition • Data-driven scheduling |
-| **Industrial Safety** | K3 protocols • Work permit systems • Risk assessment • Incident investigation |
-| **Data Analysis** | Google Sheets logging • Python automation • Statistical trending • Maintenance analytics |
+| Category | Skills |
+|----------|----------|
+| **Electrical Maintenance** | Three-phase motors • MCC systems • Circuit breaker systems • Transformer inspection |
+| **Motor & Drive Systems** | VFD support • Soft starters • Motor troubleshooting • Insulation testing |
+| **Instrumentation** | CT/PT systems • Sensor inspection • Signal checking • Basic PLC troubleshooting |
+| **Maintenance Operations** | Preventive maintenance • Equipment inspection • Condition monitoring • Technical reporting |
+| **Industrial Safety** | K3 awareness • Work permit systems • Risk identification • Field safety procedures |
+| **Technical Analysis** | MATLAB basics • Google Sheets logging • Basic Python • Documentation |
 
 ---
 
-## 💼 Professional Experience
+## 💼 Industrial Experience
 
 ### PT Dexin Steel Indonesia
-**Electrical & Instrument Technician** | DSI-SS Department | Active
+**Electrical & Instrument Technician** | DSI-SS Department
 
-**Key Responsibilities:**
-- Preventive and predictive maintenance of critical electrical systems in submerged arc furnace (SAF) operations
-- Condition monitoring and failure analysis for motors, transformers, and protection systems
-- Work permit coordination, safety compliance, and incident investigation
-- Data collection and trend analysis for maintenance interval optimization
-- Field troubleshooting under operational constraints
-
-**Notable Achievements:**
-- Identified bearing failure precursors 8 weeks before catastrophic failure (prevented emergency downtime)
-- Zero electrical incidents during 18-month safety compliance period
-- Designed standardized electrical work permit system with integrated hazard assessment
-- Supported VFD commissioning that improved motor lifespan and process control precision
+### Main Responsibilities
+- Support preventive maintenance activities for industrial electrical systems
+- Perform inspection and troubleshooting for motors, MCC panels, and transformers
+- Assist instrumentation checking and field diagnostics
+- Support VFD systems and industrial motor control operations
+- Follow industrial safety procedures and work permit systems
+- Prepare maintenance documentation and inspection reports
 
 ---
 
 ## 🔧 Projects & Technical Work
 
-### 1️⃣ **Electromagnetic Force Analysis in Water-Cooled Cables**
-**Thesis Work** | MATLAB, Field Data Analysis, Electromagnetics
+### 1️⃣ Electromagnetic Force Analysis in SAF Water-Cooled Cables
+**Industrial Research Project** | MATLAB • Electrical Analysis • SAF System
 
-Detailed analytical study on electromagnetic forces within SAF water-cooled cable systems. Combined theoretical modeling with practical field observations.
+Conducted analytical study related to electromagnetic force distribution in submerged arc furnace water-cooled cable systems using engineering calculations and simulation support.
 
-**Contribution:** Field data collection, equipment measurements, trend documentation, MATLAB simulation support
-
----
-
-### 2️⃣ **Preventive Maintenance Data Logging System**
-**Maintenance Operations** | Google Sheets, Trend Analysis, PdM Strategy
-
-Developed systematic condition-monitoring routine for critical motors and transformers. Monthly parameter logging to identify degradation patterns.
-
-**Result:** Identified 2 bearing failures 8 weeks early → prevented production downtime
+**Focus Areas**
+- Electrical system analysis
+- Field observation documentation
+- MATLAB simulation support
+- Industrial electrical research
 
 ---
 
-### 3️⃣ **VFD Installation & Commissioning (SAF Process)**
-**Field Engineering** | VFD Systems, Motor Control, Testing & Validation
+### 2️⃣ Preventive Maintenance Data Logging
+**Maintenance Documentation Project** | Google Sheets • Maintenance Monitoring
 
-Supported design, installation, and testing of variable frequency drive for large induction motor controlling furnace feed.
+Developed a simple maintenance logging system for documenting motor and transformer inspection data to support preventive maintenance activities.
 
-**Impact:** Smooth ramp-up reduced mechanical shock, improved motor lifespan, enhanced process control
-
----
-
-### 4️⃣ **Transformer Protection Relay Diagnostics**
-**Troubleshooting** | CT/PT Testing, Relay Calibration, Root Cause Analysis
-
-Investigated intermittent protection relay trips. Performed CT/PT testing and coordination analysis.
-
-**Finding:** CT saturation under fault transients → optimized secondary wiring & relay settings
+**Application**
+- Maintenance records
+- Inspection tracking
+- Basic condition monitoring
+- Equipment documentation
 
 ---
 
-### 5️⃣ **Three-Phase Motor Digital Twin (MATLAB)**
-**Simulation & Analysis** | MATLAB, Signal Processing, Fault Modeling
+### 3️⃣ VFD Installation Support
+**Field Engineering Support** | VFD Systems • Motor Control
 
-Built electrical and mechanical simulation model integrating load profiles, thermal dynamics, and fault scenarios.
+Supported installation and testing activities for variable frequency drive systems used in industrial motor control applications.
 
-**Application:** Validated maintenance scheduling decisions, predicted failure modes under transients
+**Scope**
+- Cable routing support
+- Parameter setup assistance
+- Functional testing
+- Industrial motor control support
 
 ---
 
-### 6️⃣ **Electrical Work Permit & Safety System**
-**Safety & Process Design** | K3 Protocols, Documentation, Risk Assessment
+### 4️⃣ Transformer Protection Relay Troubleshooting
+**Electrical Troubleshooting** | CT/PT Systems • Relay Diagnostics
 
-Designed standardized work permit templates with integrated hazard identification and control measures.
+Assisted troubleshooting activities related to transformer protection relay systems and electrical protection devices.
 
-**Outcome:** Zero electrical incidents (18 months) • Improved supervision clarity • Enhanced regulatory compliance
+**Activities**
+- CT/PT checking
+- Relay inspection
+- Electrical diagnostics
+- Troubleshooting support
+
+---
+
+### 5️⃣ Three-Phase Motor Digital Twin Simulation
+**Technical Simulation Project** | MATLAB • Motor Simulation
+
+Built a basic simulation model of a three-phase induction motor for studying motor behavior and industrial fault conditions.
+
+**Purpose**
+- Educational simulation
+- Motor analysis learning
+- Fault condition understanding
+- Industrial system study
+
+---
+
+### 6️⃣ 5W Joule Thief Circuit Project
+**Electronics Project** | DIY Electronics • Power Electronics
+
+Designed and built a Joule Thief circuit capable of powering a 5W LED using low-voltage DC supply and recycled ferrite transformer components.
+
+**Technical Focus**
+- DC voltage boosting
+- Transformer winding
+- Circuit experimentation
+- Electronics troubleshooting
+
+---
+
+### 7️⃣ ESG Water Saving Improvement Project
+**Industrial Improvement Initiative** | ESG • Sustainability
+
+Contributed to industrial water-saving improvement ideas focused on rainwater utilization and operational water efficiency.
+
+**Contribution**
+- Observation and documentation
+- Practical improvement ideas
+- Water efficiency support
+- ESG awareness initiatives
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-**Simulation & Analysis**
-- MATLAB (signal processing, system modeling, data visualization)
-- Python (data processing, automation, analysis scripts)
-- Google Sheets (maintenance logging, trend analysis, scheduling)
+### Electrical & Industrial Tools
+- Multimeter
+- Clamp Meter
+- Megger / Insulation Tester
+- Oscilloscope
+- Thermography Camera
+- Vibration Monitoring Tools
 
-**Electrical Instruments**
-- Multimeter & Clamp Meter (voltage, current, power factor)
-- Megohmmeter (insulation resistance testing)
-- Oscilloscope (waveform analysis, transient capture)
-- Thermography Camera (thermal fault detection)
-- Vibration Analyzer (bearing condition, imbalance detection)
+### Software & Analysis
+- MATLAB
+- Google Sheets
+- Basic Python
+- Technical Documentation Tools
 
-**Industrial Systems**
-- SCADA / HMI (monitoring and diagnostics)
-- Work management software (work orders, asset tracking)
-- Technical standards (IEC, NFPA, IEEE reference and application)
-
-**Documentation**
-- LaTeX (technical reports, thesis formatting)
+### Industrial Systems
+- MCC Systems
+- VFD Systems
+- SCADA / HMI Basics
+- Industrial Electrical Protection Systems
 
 ---
 
-## 🎓 Professional Mindset
+## 🎓 Professional Interests
 
-**Six Core Principles guiding technical decisions:**
+Areas currently being developed and explored:
 
-| Principle | Description |
-|-----------|-------------|
-| 🔄 **Reliability-Oriented** | Every decision considers equipment lifespan, failure risk, operational continuity. Preventive > reactive. |
-| 🔍 **Root Cause Awareness** | Dig deeper to understand *why* systems fail, not just *what* failed. Prevent recurrence. |
-| ⚠️ **Safety as Baseline** | Industrial work = real risk. Electrical hazards, confined spaces demand discipline. Non-negotiable. |
-| 📈 **Continuous Improvement** | Every maintenance cycle refines process, documentation, execution. Incremental gains compound. |
-| 📢 **Clear Communication** | Document thoroughly. Explain findings in practical, actionable terms for all stakeholders. |
-| ✏️ **Precision & Discipline** | Accurate measurements, careful procedures, proper documentation = equipment reliability. Details matter. |
+- Predictive maintenance concepts
+- Industrial electrical reliability
+- Equipment condition monitoring
+- Industrial automation basics
+- Engineering simulations
+- Maintenance data analysis
+- Industrial troubleshooting methodologies
 
 ---
 
 ## 🌍 About This Repository
 
-**Structure:**
-- **`index.html`** – Complete portfolio website (single-file, responsive)
-- **`README.md`** – This file (professional overview)
-- **`.gitignore`** – Standard GitHub defaults
+### Repository Contents
+- `index.html` → Portfolio website
+- `README.md` → Professional profile and technical overview
 
-**Deployment:**
-- Hosted on GitHub Pages at `marwanhusin.github.io`
-- No external dependencies (pure HTML/CSS/JS)
-- Fast load times, minimal attack surface
-- Mobile responsive across all devices
+### Deployment
+- Hosted using GitHub Pages
+- Responsive single-file website
+- Lightweight HTML/CSS/JavaScript structure
 
-**Content Updates:**
-- Accuracy-first philosophy: claims verified, projects documented
-- Updates follow significant project completions or methodology improvements
-- Semi-annual review cycle ensures current relevance
-- All technical specifications reviewed against industry standards
-
----
-
-## 📧 Get In Touch
-
-**Professional inquiries:** 
-- 📨 Email for technical discussions or employment opportunities
-- 💼 LinkedIn for professional networking
-- 💻 GitHub for code samples and technical work
-
-**Response time:** Typically within 48 hours for professional inquiries
-
-**Location:** Central Sulawesi, Indonesia  
-**Availability:** Open for technical discussions, collaboration, and opportunities in industrial maintenance and reliability engineering
+### Portfolio Direction
+This portfolio is continuously updated with:
+- Industrial engineering projects
+- Technical learning progress
+- Electrical maintenance activities
+- Engineering simulations and documentation
 
 ---
 
-## 📊 Quick Facts
+## 📧 Contact
 
-- **Current Role:** Electrical & Instrument Technician, PT Dexin Steel Indonesia
-- **Specialization:** Predictive Maintenance & Equipment Reliability
-- **Career Direction:** Senior Electrical Technician → Maintenance Engineer → Reliability/PdM Engineer
-- **Key Strength:** Translating complex electrical phenomena into actionable maintenance strategies
-- **Safety Track Record:** Zero electrical incidents during 18-month compliance period
-- **Primary Focus:** Shifting heavy industry from reactive to predictive maintenance models
+### Professional Links
+- LinkedIn
+- GitHub
+- Email
 
----
+### Availability
+Open for:
+- Industrial engineering discussions
+- Technical collaboration
+- Maintenance engineering opportunities
+- Electrical & instrumentation projects
 
-## 🔐 Credibility & Verification
-
-This portfolio represents actual field experience, verified through:
-- ✓ Documented project outcomes with measurable results
-- ✓ Safety and compliance records
-- ✓ Equipment measurements and field data
-- ✓ Supervisor and technical reference verification available upon request
-
-No hypothetical scenarios. No overclaimed expertise. Pure industrial practice.
+### Location
+Central Sulawesi, Indonesia
 
 ---
 
-**Last Updated:** January 2026  
-**Portfolio Version:** 2.0 (Professional Edition)
+## 📊 Quick Profile
+
+| Category | Information |
+|----------|-------------|
+| **Current Position** | Electrical & Instrument Technician |
+| **Industry** | Steel Smelter / Industrial Maintenance |
+| **Focus Area** | Electrical Maintenance & Instrumentation |
+| **Technical Interests** | Predictive Maintenance • Motor Systems • Industrial Reliability |
+| **Project Interests** | Simulation • Industrial Troubleshooting • Engineering Documentation |
+
+---
+
+## 🔐 Portfolio Notes
+
+This portfolio contains:
+- Practical industrial learning experience
+- Engineering project documentation
+- Technical simulations and maintenance-related projects
+- Educational and operational engineering activities
+
+The goal of this repository is to document continuous technical development and industrial engineering experience.
+
+---
+
+**Last Updated:** May 2026  
+**Portfolio Version:** 3.0
 
 ---
 
 ## License
 
-© 2025 Marwan Putra Haji Husin. All rights reserved.
+© 2026 Marwan Putra Haji Husin. All rights reserved.
