@@ -1,26 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Marwan Putra Haji Husin | Electrical & Instrument Engineer
+    </title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        :root{
+            --bg:#0f1722;
+            --card:#1b2735;
+            --card-hover:#243447;
+            --accent:#00bfff;
+            --accent-light:#5edfff;
+            --text:#e6edf5;
+            --text-secondary:#9fb3c8;
+            --border:#314154;
+            --success:#10b981;
+            --transition:0.3s ease;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+            background:var(--bg);
+            color:var(--text);
+            line-height:1.7;
+            overflow-x:hidden;
+        }
+
+        a{
+            text-decoration:none;
+            color:inherit;
+        }
+
+        /* ================= HEADER ================= */
+
+        header{
+            position:sticky;
+            top:0;
+            z-index:999;
+            background:rgba(15,23,34,0.92);
+            backdrop-filter:blur(10px);
+            border-bottom:1px solid var(--border);
+        }
+
+        nav{
+            max-width:1150px;
+            margin:auto;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:1rem 2rem;
+        }
+
+        .logo{
+            font-size:1.3rem;
+            font-weight:700;
+            color:var(--accent-light);
+            letter-spacing:1px;
+        }
+
+        nav ul{
+            display:flex;
+            gap:2rem;
+            list-style:none;
+        }
+
+        nav ul li a{
+            color:var(--text-secondary);
+            transition:var(--transition);
+            font-size:0.95rem;
+            font-weight:500;
+        }
+
+        nav ul li a:hover{
+            color:var(--accent-light);
+        }
+
+        /* ================= HERO ================= */
+
+        .hero{
+            max-width:1150px;
+            margin:auto;
+            padding:6rem 2rem 5rem;
+            text-align:center;
+        }
+
+        .hero h1{
+            font-size:3.3rem;
+            margin-bottom:1rem;
+            color:var(--accent-light);
+            line-height:1.2;
+        }
+
+        .subtitle{
+            color:var(--text-secondary);
+            font-size:1.2rem;
+            margin-bottom:1.5rem;
+        }
+
+        .hero p{
+            max-width:760px;
+            margin:auto;
+            color:var(--text);
+            font-size:1rem;
+        }
+
+        .hero-buttons{
+            margin-top:2rem;
+            display:flex;
+            justify-content:center;
+            gap:1rem;
+            flex-wrap:wrap;
+        }
+
+        .btn{
+            padding:0.9rem 1.5rem;
+            border-radius:8px;
+            font-weight:600;
+            transition:var(--transition);
+        }
+
+        .btn-primary{
+            background:var(--accent);
+            color:white;
+        }
+
+        .btn-primary:hover{
+            background:var(--accent-light);
+            transform:translateY(-2px);
+        }
+
+        .btn-secondary{
+            border:1px solid var(--accent);
+            color:var(--accent-light);
+        }
+
+        .btn-secondary:hover{
+            background:rgba(0,191,255,0.1);
+        }
+
+        /* ================= GENERAL SECTION ================= */
+
+        section{
+            max-width:1150px;
+            margin:auto;
+            padding:5rem 2rem;
+            border-bottom:1px solid var(--border);
+        }
+
+        section h2{
+            font-size:2rem;
+            color:var(--accent-light);
+            margin-bottom:0.8rem;
+        }
+
+        .divider{
+            width:70px;
+            height:3px;
+            background:linear-gradient(to right,var(--accent),transparent);
+            margin-bottom:2rem;
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about-content{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:3rem;
+        }
+
+        .about-text p{
+            margin-bottom:1.3rem;
+        }
+
+        .about-highlight{
+            background:rgba(0,191,255,0.08);
+            border-left:3px solid var(--accent);
+            padding:1.3rem;
+            border-radius:6px;
+            margin:2rem 0;
+        }
+
+        .experience-list{
+            list-style:none;
+        }
+
+        .experience-list li{
+            padding:1rem 0;
+            border-bottom:1px solid var(--border);
+        }
+
+        /* ================= SKILLS ================= */
+
+        .skills-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+            gap:1.5rem;
+        }
+
+        .skill-card{
+            background:var(--card);
+            border:1px solid var(--border);
+            padding:2rem;
+            border-radius:12px;
+            transition:var(--transition);
+        }
+
+        .skill-card:hover{
+            transform:translateY(-4px);
+            background:var(--card-hover);
+            border-color:var(--accent);
+        }
+
+        .skill-card h3{
+            color:var(--accent-light);
+            margin-bottom:1rem;
+        }
+
+        .skill-card ul{
+            list-style:none;
+        }
+
+        .skill-card li{
+            margin-bottom:0.6rem;
+            color:var(--text-secondary);
+        }
+
+        .skill-card li::before{
+            content:"■ ";
+            color:var(--accent);
+        }
+
+        /* ================= PROJECTS ================= */
+
+        .projects-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+            gap:2rem;
+        }
+
+        .project-card{
+            background:var(--card);
+            border:1px solid var(--border);
+            border-radius:14px;
+            overflow:hidden;
+            transition:var(--transition);
+        }
+
+        .project-card:hover{
+            transform:translateY(-5px);
+            border-color:var(--accent);
+            background:var(--card-hover);
+        }
+
+        .project-header{
+            padding:1.5rem;
+            background:rgba(0,191,255,0.08);
+            border-bottom:1px solid var(--border);
+        }
+
+        .project-type{
+            color:var(--accent);
+            font-size:0.8rem;
+            font-weight:700;
+            margin-bottom:0.5rem;
+            text-transform:uppercase;
+            letter-spacing:1px;
+        }
+
+        .project-header h3{
+            color:var(--accent-light);
+            font-size:1.1rem;
+        }
+
+        .project-body{
+            padding:1.5rem;
+        }
+
+        .project-body p{
+            margin-bottom:1rem;
+            color:var(--text-secondary);
+        }
+
+        .project-tech{
+            display:flex;
+            flex-wrap:wrap;
+            gap:0.5rem;
+            margin-top:1rem;
+        }
+
+        .tech-tag{
+            background:rgba(0,191,255,0.12);
+            color:var(--accent-light);
+            padding:0.35rem 0.7rem;
+            border-radius:6px;
+            font-size:0.8rem;
+        }
+
+        /* ================= TOOLS ================= */
+
+        .tools-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            gap:1.5rem;
+        }
+
+        .tool-item{
+            background:var(--card);
+            border:1px solid var(--border);
+            padding:1.5rem;
+            border-radius:10px;
+            text-align:center;
+            transition:var(--transition);
+        }
+
+        .tool-item:hover{
+            border-color:var(--accent);
+            background:var(--card-hover);
+        }
+
+        .tool-item h4{
+            color:var(--accent-light);
+            margin-bottom:0.5rem;
+        }
+
+        .tool-item p{
+            color:var(--text-secondary);
+            font-size:0.9rem;
+        }
+
+        /* ================= CONTACT ================= */
+
+        .contact-content{
+            text-align:center;
+            max-width:700px;
+            margin:auto;
+        }
+
+        .contact-links{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:1rem;
+            margin-top:2rem;
+        }
+
+        .contact-link{
+            padding:0.8rem 1.4rem;
+            border:1px solid var(--border);
+            border-radius:8px;
+            background:var(--card);
+            transition:var(--transition);
+            color:var(--accent-light);
+        }
+
+        .contact-link:hover{
+            border-color:var(--accent);
+            background:rgba(0,191,255,0.08);
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer{
+            padding:2rem;
+            text-align:center;
+            color:var(--text-secondary);
+            font-size:0.9rem;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:1rem;
+            }
+
+            nav ul{
+                gap:1rem;
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .hero h1{
+                font-size:2.2rem;
+            }
+
+            .about-content{
+                grid-template-columns:1fr;
+            }
+
+            section{
+                padding:4rem 1.5rem;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <nav>
+
+        <div class="logo">
+            MARWAN HUSIN
+        </div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
+
 <!-- HERO -->
+
 <section class="hero">
-    <h1>Electrical & Instrument Engineer</h1>
+
+    <h1>
+        Electrical & Instrument Engineer
+    </h1>
+
     <p class="subtitle">
         Industrial Maintenance • Motor Control • Smelter Operations
     </p>
 
     <p>
-        Electrical and instrument engineer with hands-on experience in electrical maintenance, motor control systems, industrial instrumentation, and steel smelter operations. Experienced in troubleshooting, preventive maintenance, field inspection, and industrial safety practices for high-demand manufacturing environments.
+        Electrical and instrument engineer with hands-on experience in electrical maintenance, industrial troubleshooting, motor control systems, instrumentation support, and preventive maintenance activities in steel smelter operations and industrial environments.
     </p>
 
     <div class="hero-buttons">
         <a href="#contact" class="btn btn-primary">Contact Me</a>
         <a href="#projects" class="btn btn-secondary">View Projects</a>
     </div>
+
 </section>
 
 <!-- ABOUT -->
+
 <section id="about">
+
     <h2>About Me</h2>
     <div class="divider"></div>
 
     <div class="about-content">
+
         <div class="about-text">
 
             <p>
@@ -43,7 +490,8 @@
         </div>
 
         <div>
-            <h3 style="color: var(--color-accent-light); margin-bottom: 1.5rem;">
+
+            <h3 style="color:var(--accent-light); margin-bottom:1.5rem;">
                 Industrial Experience
             </h3>
 
@@ -71,7 +519,7 @@
 
                 <li>
                     <strong>Industrial Operations</strong>
-                    – SAF operation support, plant coordination, field maintenance activities
+                    – SAF operation support, plant coordination, field maintenance
                 </li>
 
                 <li>
@@ -79,18 +527,18 @@
                     – K3 implementation, work permits, risk awareness
                 </li>
 
-                <li>
-                    <strong>Technical Documentation</strong>
-                    – Maintenance reports, inspection records, engineering documentation
-                </li>
-
             </ul>
+
         </div>
+
     </div>
+
 </section>
 
 <!-- SKILLS -->
+
 <section id="skills">
+
     <h2>Technical Skills</h2>
     <div class="divider"></div>
 
@@ -129,135 +577,53 @@
             </ul>
         </div>
 
-        <div class="skill-card">
-            <h3>Maintenance Operations</h3>
-            <ul>
-                <li>Preventive maintenance</li>
-                <li>Equipment inspection</li>
-                <li>Maintenance documentation</li>
-                <li>Condition monitoring</li>
-                <li>Basic troubleshooting analysis</li>
-            </ul>
-        </div>
-
-        <div class="skill-card">
-            <h3>Industrial Safety</h3>
-            <ul>
-                <li>K3 implementation</li>
-                <li>Work permit systems</li>
-                <li>Risk identification</li>
-                <li>Electrical safety awareness</li>
-                <li>Field safety procedures</li>
-            </ul>
-        </div>
-
-        <div class="skill-card">
-            <h3>Engineering Tools</h3>
-            <ul>
-                <li>MATLAB basics</li>
-                <li>Google Sheets</li>
-                <li>Basic Python</li>
-                <li>Technical reporting</li>
-                <li>Industrial documentation</li>
-            </ul>
-        </div>
-
     </div>
+
 </section>
 
 <!-- PROJECTS -->
+
 <section id="projects">
+
     <h2>Projects & Engineering Experience</h2>
     <div class="divider"></div>
 
     <div class="projects-grid">
 
         <div class="project-card">
+
             <div class="project-header">
                 <div class="project-type">Industrial Research</div>
                 <h3>Electromagnetic Force Analysis in SAF Water-Cooled Cables</h3>
             </div>
 
             <div class="project-body">
-                <p>
-                    Conducted analytical study related to electromagnetic force distribution in submerged arc furnace (SAF) water-cooled cable systems using engineering calculations and simulation support.
-                </p>
 
                 <p>
-                    <strong>Focus:</strong>
-                    Electromagnetic behavior analysis, industrial electrical systems, and field observation documentation.
+                    Conducted analytical study related to electromagnetic force distribution in submerged arc furnace water-cooled cable systems using engineering calculations and simulation support.
                 </p>
 
                 <div class="project-tech">
                     <span class="tech-tag">MATLAB</span>
-                    <span class="tech-tag">Electrical Analysis</span>
                     <span class="tech-tag">SAF System</span>
+                    <span class="tech-tag">Electrical Analysis</span>
                 </div>
+
             </div>
+
         </div>
 
         <div class="project-card">
-            <div class="project-header">
-                <div class="project-type">Maintenance Project</div>
-                <h3>Preventive Maintenance Data Logging</h3>
-            </div>
 
-            <div class="project-body">
-                <p>
-                    Developed simple maintenance logging and equipment monitoring documentation using Google Sheets for tracking motor and transformer inspection data.
-                </p>
-
-                <p>
-                    <strong>Application:</strong>
-                    Maintenance documentation, inspection tracking, and basic trend monitoring.
-                </p>
-
-                <div class="project-tech">
-                    <span class="tech-tag">Google Sheets</span>
-                    <span class="tech-tag">Maintenance</span>
-                    <span class="tech-tag">Data Logging</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-type">Field Support</div>
-                <h3>VFD Installation Support</h3>
-            </div>
-
-            <div class="project-body">
-                <p>
-                    Assisted installation and testing activities for variable frequency drive systems used in industrial motor control applications within smelter operations.
-                </p>
-
-                <p>
-                    <strong>Scope:</strong>
-                    Cable routing, field installation, parameter setup, and functional testing support.
-                </p>
-
-                <div class="project-tech">
-                    <span class="tech-tag">VFD</span>
-                    <span class="tech-tag">Motor Control</span>
-                    <span class="tech-tag">Industrial Systems</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
             <div class="project-header">
                 <div class="project-type">Technical Project</div>
                 <h3>Three-Phase Motor Digital Twin Simulation</h3>
             </div>
 
             <div class="project-body">
-                <p>
-                    Built basic simulation model for three-phase induction motor analysis using MATLAB for learning industrial motor behavior and fault conditions.
-                </p>
 
                 <p>
-                    <strong>Purpose:</strong>
-                    Educational simulation, motor analysis, and understanding fault scenarios in industrial systems.
+                    Built a basic simulation model of a three-phase induction motor using MATLAB for studying industrial motor behavior and fault conditions.
                 </p>
 
                 <div class="project-tech">
@@ -265,23 +631,22 @@
                     <span class="tech-tag">Motor Simulation</span>
                     <span class="tech-tag">Diagnostics</span>
                 </div>
+
             </div>
+
         </div>
 
         <div class="project-card">
+
             <div class="project-header">
                 <div class="project-type">Electronics Project</div>
                 <h3>5W Joule Thief Circuit Project</h3>
             </div>
 
             <div class="project-body">
-                <p>
-                    Designed and built a Joule Thief circuit capable of powering a 5W LED using low-voltage DC supply from recycled electronic components and ferrite transformer materials.
-                </p>
 
                 <p>
-                    <strong>Focus:</strong>
-                    DC voltage boosting, transformer winding, circuit testing, and energy efficiency experimentation.
+                    Designed and built a Joule Thief circuit capable of powering a 5W LED using low-voltage DC supply and recycled ferrite transformer components.
                 </p>
 
                 <div class="project-tech">
@@ -289,32 +654,118 @@
                     <span class="tech-tag">DIY Circuit</span>
                     <span class="tech-tag">Power Electronics</span>
                 </div>
-            </div>
-        </div>
 
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-type">ESG Initiative</div>
-                <h3>Industrial Water Saving Improvement Project</h3>
             </div>
 
-            <div class="project-body">
-                <p>
-                    Contributed to ESG-related industrial water saving initiative focused on rainwater utilization and water reuse opportunities in operational areas.
-                </p>
-
-                <p>
-                    <strong>Contribution:</strong>
-                    Observation, documentation, idea development, and practical improvement proposals for industrial water efficiency.
-                </p>
-
-                <div class="project-tech">
-                    <span class="tech-tag">ESG</span>
-                    <span class="tech-tag">Industrial Improvement</span>
-                    <span class="tech-tag">Sustainability</span>
-                </div>
-            </div>
         </div>
 
     </div>
+
 </section>
+
+<!-- TOOLS -->
+
+<section id="tools">
+
+    <h2>Tools & Technologies</h2>
+    <div class="divider"></div>
+
+    <div class="tools-grid">
+
+        <div class="tool-item">
+            <h4>MATLAB</h4>
+            <p>Simulation and technical analysis</p>
+        </div>
+
+        <div class="tool-item">
+            <h4>Google Sheets</h4>
+            <p>Maintenance documentation and monitoring</p>
+        </div>
+
+        <div class="tool-item">
+            <h4>Python Basics</h4>
+            <p>Basic automation and data processing</p>
+        </div>
+
+        <div class="tool-item">
+            <h4>Multimeter</h4>
+            <p>Electrical measurement and troubleshooting</p>
+        </div>
+
+        <div class="tool-item">
+            <h4>Megger</h4>
+            <p>Insulation resistance testing</p>
+        </div>
+
+        <div class="tool-item">
+            <h4>Oscilloscope</h4>
+            <p>Waveform and signal diagnostics</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h2>Contact</h2>
+    <div class="divider"></div>
+
+    <div class="contact-content">
+
+        <p>
+            Interested in industrial electrical systems, maintenance engineering, or technical collaboration? Feel free to connect.
+        </p>
+
+        <div class="contact-links">
+
+            <a href="https://linkedin.com/in/marwanhusin" class="contact-link">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/marwanhusin" class="contact-link">
+                GitHub
+            </a>
+
+            <a href="mailto:your.email@example.com" class="contact-link">
+                Email
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    © 2026 Marwan Putra Haji Husin — Electrical & Instrument Engineer
+</footer>
+
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener('click', function(e){
+
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if(target){
+            target.scrollIntoView({
+                behavior:'smooth'
+            });
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
